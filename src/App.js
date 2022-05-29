@@ -6,6 +6,8 @@ import Portfolio from "./Pages/Portfolio";
 import Contact from "./Pages/Contact";
 import Home from "./Pages/Home";
 import Blog from "./Pages/Blog";
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify";
 
 
 function App() {
@@ -24,7 +26,7 @@ function App() {
 
         </Routes>
       </Navbar>
-      
+      <ToastContainer/>
     </div>
   );
 }

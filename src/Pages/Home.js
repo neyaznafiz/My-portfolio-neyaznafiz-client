@@ -1,15 +1,27 @@
 import { motion } from 'framer-motion';
+import { useRef, useState } from 'react';
 import { FaFacebookF, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMailOpen } from 'react-icons/hi';
-// import { BsCode, BsCodeSlash } from 'react-icons/bs';
+import { toast } from 'react-toastify';
 import signatureWhite from '../Assets/signature-white.png'
 
 const Home = () => {
 
+    // const [copySuccess, setCopySuccess] = useState('');
+    // const textAreaRef = useRef(null);
+
+    // function copyToClipboard(e) {
+    //     textAreaRef.current.select();
+    //     document.execCommand('copy');
+    //     e.target.focus();
+    //     // setCopySuccess('E-mail Copied');
+    //     toast.success('E-mail Copied!')
+    // };
+
     return (
-        <div class="h-screen px-2 lg:px-0">
-            <div className='pt-20'>
-                <div className='lg:flex justify-around items-center h-full gap-x-5'>
+        <div class=" px-2 lg:px-0">
+            <div>
+                <div className='lg:flex justify-between items-center gap-x-5 pt-10'>
 
                     <div>
                         <motion.p
@@ -76,25 +88,45 @@ const Home = () => {
 
                             <motion.button onClick={() => navigator.clipboard.writeText('neyaznafiz@outlook.com')}
                                 whileHover={{ backgroundColor: ['#ffffff', 'rgba(33, 33, 33, 0)'] }}
-                                className='w-32 h-32 flex justify-center items-center text-5xl bg-primary text-neutral hover:text-primary m-4 border border-primary'
-                            >
+                                className='w-32 h-32 flex justify-center items-center text-5xl bg-primary text-neutral hover:text-primary m-4 border border-primary'>
                                 <HiOutlineMailOpen />
                             </motion.button>
 
 
                         </motion.div>
 
+                        {/* email */}
+                        {/* <div>
+                            {
+                                document.queryCommandSupported('copy') &&
+                                <motion.div
+                                    whileHover={{ backgroundColor: ['#ffffff', 'rgba(33, 33, 33, 0)'] }}
+                                    className='border bg-primary'>
+                                    <motion.button onClick={copyToClipboard}
+                                        whileHover={{ backgroundColor: ['#ffffff', 'rgba(33, 33, 33, 0)'] }}
+                                        className='w-32 h-32 flex justify-center items-center text-5xl bg-primary text-neutral hover:text-primary m-4 border border-primary'
+                                    ><HiOutlineMailOpen /></motion.button>
+                                </motion.div>
+
+                            }
+
+                            <form className=''>
+                                <textarea
+                                    ref={textAreaRef}
+                                    value='neyaznafiz@outlook.com'
+                                />
+                            </form>
+                        </div> */}
                     </motion.div>
 
                 </div>
+
+
                 <motion.div className='flex justify-end'
                     initial={{ x: 350 }}
-                    animate={{ x: 0 }}
-                    transition={{ delay: 1.5, duration: 2, type: 'spring' }}
-                >
-                    <img src={signatureWhite} alt="" className='opacity-80'
-
-                    />
+                    animate={{ x: 40 }}
+                    transition={{ delay: 1.5, duration: 2, type: 'spring' }}>
+                    <img src={signatureWhite} alt="" className='opacity-80' />
                 </motion.div>
             </div>
 
