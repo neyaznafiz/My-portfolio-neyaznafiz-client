@@ -4,13 +4,13 @@ import Logo from '../Assets/Logo.png'
 
 const Navbar = ({ children }) => {
     return (
-        <div className='bg-neutral text-primary lg:px-60 lg:pt-6'>
+        <div className='bg-neutral text-primary lg:pt-6'>
 
             <div class="drawer drawer-end">
                 <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
-                <div class="drawer-content flex flex-col ">
+                <div class="drawer-content flex flex-col lg:mx-60">
                     {/* <!-- Navbar --> */}
-                    <motion.div class="w-full navbar bg-transparent border-b"
+                    <motion.div class="w-full navbar bg-transparent border-b "
                         initial={{ y: -250 }}
                         animate={{ y: -10 }}
                         transition={{ delay: 0.2, type: 'spring' }}
