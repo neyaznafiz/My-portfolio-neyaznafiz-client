@@ -4,18 +4,21 @@ import Logo from '../Assets/Logo.png'
 
 const Navbar = ({ children }) => {
     return (
-        <div className='bg-neutral text-primary lg:px-60'>
+        <div className='bg-neutral text-primary lg:px-60 lg:pt-6'>
 
             <div class="drawer drawer-end">
                 <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
                 <div class="drawer-content flex flex-col ">
                     {/* <!-- Navbar --> */}
-                    <motion.div class="w-full navbar bg-transparent"
-                    initial={{y: -250}}
-                    animate={{y: -10}}
+                    <motion.div class="w-full navbar bg-transparent border-b"
+                        initial={{ y: -250 }}
+                        animate={{ y: -10 }}
+                        transition={{ delay: 0.2, type: 'spring' }}
                     >
                         <div class="flex-1">
-                            <img src={Logo} alt="" className='h-24' />
+                            <Link to='/'>
+                                <img src={Logo} alt="" className='h-12 lg:h-20' />
+                            </Link>
                         </div>
                         <div class="flex-none lg:hidden">
                             <label for="my-drawer-3" class="btn btn-square btn-ghost">
@@ -26,13 +29,13 @@ const Navbar = ({ children }) => {
                             <ul class="menu menu-horizontal">
                                 {/* <!-- Navbar menu content here --> */}
                                 <li>
-                                    <Link to='/home' className=''>HOME</Link>
-                                </li>
-                                <li>
                                     <Link to='/about' className=''>ABOUT</Link>
                                 </li>
                                 <li>
                                     <Link to='/portfolio' className=''>PORTFOLIO</Link>
+                                </li>
+                                <li>
+                                    <Link to='/blog' className=''>BLOG</Link>
                                 </li>
                                 <li>
                                     <Link to='/contact' className=''>CONTACT</Link>
@@ -49,13 +52,13 @@ const Navbar = ({ children }) => {
                     <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
                         {/* <!-- Sidebar content here --> */}
                         <li>
-                            <Link to='/home' className=''>HOME</Link>
-                        </li>
-                        <li>
                             <Link to='/about' className=''>ABOUT</Link>
                         </li>
                         <li>
                             <Link to='/portfolio' className=''>PORTFOLIO</Link>
+                        </li>
+                        <li>
+                            <Link to='/blog' className=''>BLOG</Link>
                         </li>
                         <li>
                             <Link to='/contact' className=''>CONTACT</Link>
