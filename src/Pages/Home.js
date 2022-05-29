@@ -3,6 +3,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaFacebookF, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMailOpen } from 'react-icons/hi';
+// import { BsCode, BsCodeSlash } from 'react-icons/bs';
 import signatureWhite from '../Assets/signature-white.png'
 
 const Home = () => {
@@ -22,7 +23,7 @@ const Home = () => {
                             Neyaz <br /> Mobalik Nafiz.
                         </p>
                         <div className='flex justify-end'>
-                            <p className='text-4xl font-mono'> Web Developer </p>
+                            <p className='text-4xl flex items-center '> Web Developer </p>
                         </div>
                     </motion.div>
 
@@ -55,7 +56,7 @@ const Home = () => {
                 <motion.div className='flex justify-end'
                 initial={{ x: 350 }}
                 animate={{ x: 0 }}
-                transition={{ delay: 1.5, duration: 0.5, type: 'spring' }}
+                transition={{ delay: 1.5, duration: 2, type: 'spring' }}
                 >
                     <img src={signatureWhite} alt="" className='opacity-80' 
                     
