@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { FaFacebookF, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaDev, FaFacebookF, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMailOpen } from 'react-icons/hi';
 import { toast } from 'react-toastify';
 import signatureWhite from '../Assets/signature-white.png'
@@ -19,8 +19,8 @@ const Home = () => {
     // };
 
     return (
-        <div class=" px-2 lg:px-0">
-            <div>
+        <div class=" lg:px-0">
+            <div className='px-3'>
                 <div className='lg:flex justify-between items-center gap-x-5 pt-10'>
 
                     <div>
@@ -41,23 +41,12 @@ const Home = () => {
                     </div>
 
                     <motion.div
-                        className='grid grid-cols-2 gap-10 pb-16 pt-10'
+                        className='grid grid-cols-2 gap-5 pb-16 pt-10'
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.5, duration: 2 }}
                     >
-                        {/* facebook */}
-                        <motion.div
-                            whileHover={{ backgroundColor: ['#ffffff', 'rgba(33, 33, 33, 0)'] }}
-                            className='border bg-primary '>
-
-                            <motion.a href="https://www.facebook.com/neyaznafiz/" target='_blank'
-                                whileHover={{ backgroundColor: ['#ffffff', 'rgba(33, 33, 33, 0)'] }}
-                                className='w-32 h-32 flex justify-center items-center text-5xl bg-primary text-neutral  hover:text-primary m-4 border border-primary'><FaFacebookF /></motion.a>
-
-                        </motion.div>
-
-
+                       
                         {/* github */}
                         <motion.div
                             whileHover={{ backgroundColor: ['#ffffff', 'rgba(33, 33, 33, 0)'] }}
@@ -66,6 +55,18 @@ const Home = () => {
                             <motion.a href="https://github.com/neyaznafiz" target='_blank'
                                 whileHover={{ backgroundColor: ['#ffffff', 'rgba(33, 33, 33, 0)'] }}
                                 className='w-32 h-32 flex justify-center items-center text-5xl bg-primary text-neutral hover:text-primary m-4 border border-primary'><FaGithub /></motion.a>
+
+                        </motion.div>
+
+
+                         {/* devto */}
+                         <motion.div
+                            whileHover={{ backgroundColor: ['#ffffff', 'rgba(33, 33, 33, 0)'] }}
+                            className='border bg-primary '>
+
+                            <motion.a href="https://www.facebook.com/neyaznafiz/" target='_blank'
+                                whileHover={{ backgroundColor: ['#ffffff', 'rgba(33, 33, 33, 0)'] }}
+                                className='w-32 h-32 flex justify-center items-center text-5xl bg-primary text-neutral  hover:text-primary m-4 border border-primary'><FaDev /></motion.a>
 
                         </motion.div>
 
@@ -94,6 +95,7 @@ const Home = () => {
 
 
                         </motion.div>
+                        
 
                         {/* email */}
                         {/* <div>

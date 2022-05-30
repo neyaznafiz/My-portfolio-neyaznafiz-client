@@ -8,7 +8,7 @@ const Navbar = ({ children }) => {
 
             <div class="drawer drawer-end">
                 <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
-                <div class="drawer-content flex flex-col lg:mx-60">
+                <div class="drawer-content flex flex-col lg:mx-64">
                     {/* <!-- Navbar --> */}
                     <motion.div class="w-full navbar bg-transparent border-b "
                         initial={{ y: -250 }}
@@ -22,7 +22,7 @@ const Navbar = ({ children }) => {
                         </div>
                         <div class="flex-none lg:hidden">
                             <label for="my-drawer-3" class="btn btn-square btn-ghost">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                             </label>
                         </div>
                         <div class="flex-none hidden lg:block">
@@ -49,7 +49,7 @@ const Navbar = ({ children }) => {
                 </div>
                 <div class="drawer-side text-black">
                     <label for="my-drawer-3" class="drawer-overlay"></label>
-                    <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
+                    <ul class="menu p-4 overflow-y-auto opacity-80 bg-neutral text-primary">
                         {/* <!-- Sidebar content here --> */}
                         <li>
                             <Link to='/about' className=''>ABOUT</Link>
