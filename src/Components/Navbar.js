@@ -1,8 +1,11 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Logo from '../Assets/Logo.png'
+import '../Style/style.css'
+
 
 const Navbar = ({ children }) => {
+
     return (
         <div className='bg-neutral text-primary lg:pt-6'>
 
@@ -26,20 +29,16 @@ const Navbar = ({ children }) => {
                             </label>
                         </div>
                         <div class="flex-none hidden lg:block">
-                            <ul class="menu menu-horizontal">
+                            <ul class="menu menu-horizontal gap-5 pr-6 pt-3">
                                 {/* <!-- Navbar menu content here --> */}
-                                <li>
-                                    <Link to='/about' className=''>ABOUT</Link>
-                                </li>
-                                <li>
-                                    <Link to='/portfolio' className=''>PORTFOLIO</Link>
-                                </li>
-                                <li>
-                                    <Link to='/blog' className=''>BLOG</Link>
-                                </li>
-                                <li>
-                                    <Link to='/contact' className=''>CONTACT</Link>
-                                </li>
+
+                                {/* <Link to='/about' className=''>ABOUT</Link> */}
+
+                                <Link to='/portfolio' className='menu-selection type-1'>PORTFOLIO</Link>
+
+                                <Link to='/blog' className='menu-selection type-1'>BLOG</Link>
+
+                                <Link to='/contact' className='menu-selection type-1'>CONTACT</Link>
 
                             </ul>
                         </div>
@@ -49,20 +48,17 @@ const Navbar = ({ children }) => {
                 </div>
                 <div class="drawer-side text-black">
                     <label for="my-drawer-3" class="drawer-overlay"></label>
-                    <ul class="menu p-4 overflow-y-auto opacity-80 bg-neutral text-primary">
+                    <ul class="menu p-4 overflow-y-auto opacity-80 bg-neutral text-primary pt-14">
                         {/* <!-- Sidebar content here --> */}
-                        <li>
-                            <Link to='/about' className=''>ABOUT</Link>
-                        </li>
-                        <li>
-                            <Link to='/portfolio' className=''>PORTFOLIO</Link>
-                        </li>
-                        <li>
-                            <Link to='/blog' className=''>BLOG</Link>
-                        </li>
-                        <li>
-                            <Link to='/contact' className=''>CONTACT</Link>
-                        </li>
+
+                        {/* <Link to='/about' className=''>ABOUT</Link> */}
+
+                        <Link to='/portfolio' className='py-2 menu-selection type-1'>PORTFOLIO</Link>
+
+                        <Link to='/blog' className='py-2 menu-selection type-1'>BLOG</Link>
+
+                        <Link to='/contact' className='py-2 menu-selection type-1'>CONTACT</Link>
+
 
                     </ul>
 

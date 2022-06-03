@@ -19,16 +19,16 @@ const Home = () => {
     // };
 
     return (
-        <div class=" lg:px-0">
+        <div class=" md:px-0">
             <div className='px-3'>
-                <div className='lg:flex justify-between items-center gap-x-5 pt-10'>
+                <div className='md:flex justify-between items-center gap-x-5 pt-10'>
 
                     <div>
                         <motion.p
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.5, duration: 2 }}
-                            className='lg:text-9xl text-6xl font-serif lg:pt-8'>
+                            className='md:text-9xl text-6xl font-serif md:pt-8'>
                             Neyaz <br /> Mobalik Nafiz.
                         </motion.p>
                         <div className='flex justify-end'>
@@ -50,11 +50,11 @@ const Home = () => {
                         {/* github */}
                         <motion.div
                             whileHover={{ backgroundColor: ['#ffffff', 'rgba(33, 33, 33, 0)'] }}
-                            className='border bg-primary'>
+                            className='border bg-primary md:w-40 md:h-40'>
 
                             <motion.a href="https://github.com/neyaznafiz" target='_blank'
                                 whileHover={{ backgroundColor: ['#ffffff', 'rgba(33, 33, 33, 0)'] }}
-                                className='w-32 h-32 flex justify-center items-center text-5xl bg-primary text-neutral hover:text-primary m-4 border border-primary'><FaGithub /></motion.a>
+                                className='md:w-32 md:h-32 flex justify-center items-center text-5xl bg-primary text-neutral hover:text-primary m-4 border border-primary'><FaGithub /></motion.a>
 
                         </motion.div>
 
@@ -62,7 +62,7 @@ const Home = () => {
                          {/* devto */}
                          <motion.div
                             whileHover={{ backgroundColor: ['#ffffff', 'rgba(33, 33, 33, 0)'] }}
-                            className='border bg-primary '>
+                            className='border bg-primary md:w-40 md:h-40'>
 
                             <motion.a href="https://www.facebook.com/neyaznafiz/" target='_blank'
                                 whileHover={{ backgroundColor: ['#ffffff', 'rgba(33, 33, 33, 0)'] }}
@@ -74,7 +74,7 @@ const Home = () => {
                         {/* linkdin */}
                         <motion.div
                             whileHover={{ backgroundColor: ['#ffffff', 'rgba(33, 33, 33, 0)'] }}
-                            className='border bg-primary'>
+                            className='border bg-primary md:w-40 md:h-40'>
 
                             <motion.a href="https://www.linkedin.com/in/neyaznafiz/" target='_blank'
                                 whileHover={{ backgroundColor: ['#ffffff', 'rgba(33, 33, 33, 0)'] }}
@@ -85,7 +85,7 @@ const Home = () => {
                         {/* email */}
                         <motion.div
                             whileHover={{ backgroundColor: ['#ffffff', 'rgba(33, 33, 33, 0)'] }}
-                            className='border bg-primary'>
+                            className='border bg-primary md:w-40 md:h-40'>
 
                             <motion.button onClick={() => navigator.clipboard.writeText('neyaznafiz@outlook.com')}
                                 whileHover={{ backgroundColor: ['#ffffff', 'rgba(33, 33, 33, 0)'] }}
@@ -103,7 +103,7 @@ const Home = () => {
                                 document.queryCommandSupported('copy') &&
                                 <motion.div
                                     whileHover={{ backgroundColor: ['#ffffff', 'rgba(33, 33, 33, 0)'] }}
-                                    className='border bg-primary'>
+                                    className='border bg-primary md:w-40 md:h-40'>
                                     <motion.button onClick={copyToClipboard}
                                         whileHover={{ backgroundColor: ['#ffffff', 'rgba(33, 33, 33, 0)'] }}
                                         className='w-32 h-32 flex justify-center items-center text-5xl bg-primary text-neutral hover:text-primary m-4 border border-primary'
