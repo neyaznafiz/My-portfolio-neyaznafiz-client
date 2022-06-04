@@ -11,14 +11,14 @@ const Footer = () => {
     return (
         <div className=''>
 
-            <footer class="footer p-10 bg-neutral text-neutral-content flex items-center justify-between">
+            <footer class="footer p-10  text-neutral-content flex items-center justify-between">
                 <div>
                     <FaSlackHash className='text-5xl' />
 
                     <motion.div className=''
                         initial={{ x: -2000 }}
                         animate={{ x: -20 }}
-                        transition={{ delay: 1.3, duration: 2, type: 'spring' }}>
+                        transition={{ delay: 1, duration: 2, type: 'spring' }}>
                         <img src={signatureWhite} alt="" className='opacity-80 w-48' />
                     </motion.div>
 
@@ -29,7 +29,6 @@ const Footer = () => {
                         typeSpeed={170}
                         backSpeed={10}
                         loop
-                        // className='font-serif'
                     />
 
                     {/* <p>Copyright {(new Date().getFullYear())} © All rights reserved by NEYAZ </p> */}

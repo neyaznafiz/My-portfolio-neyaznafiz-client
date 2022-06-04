@@ -2,12 +2,17 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import Logo from '../Assets/N-logo.png'
 import '../Style/style.css'
-
+import Background from '../Assets/tech-background.png'
 
 const Navbar = ({ children }) => {
 
     return (
-        <div className='bg-neutral text-primary md:pt-6'>
+        <div 
+        style={{
+            background: `url(${Background})`,
+            backgroundSize: 'cover'
+        }}
+        className=' text-primary md:pt-6'>
 
             <div class="drawer drawer-end">
                 <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
@@ -34,6 +39,8 @@ const Navbar = ({ children }) => {
 
                                 {/* <Link to='/about' className=''>ABOUT</Link> */}
 
+                                <Link to='/' className='menu-selection type-1'>HOME</Link>
+
                                 <Link to='/portfolio' className='menu-selection type-1'>PORTFOLIO</Link>
 
                                 <Link to='/blog' className='menu-selection type-1'>BLOG</Link>
@@ -52,6 +59,9 @@ const Navbar = ({ children }) => {
                         {/* <!-- Sidebar content here --> */}
 
                         {/* <Link to='/about' className=''>ABOUT</Link> */}
+                        
+
+                        <Link to='/' className='py-2 menu-selection type-1'>HOME</Link>
 
                         <Link to='/portfolio' className='py-2 menu-selection type-1'>PORTFOLIO</Link>
 

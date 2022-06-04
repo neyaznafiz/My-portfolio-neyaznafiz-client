@@ -10,6 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from "react-toastify";
 import { PuffLoader } from "react-spinners";
 import useLoading from "./Hooks/useLoading";
+import Background from './Assets/tech-background.png'
 
 
 function App() {
@@ -17,7 +18,12 @@ function App() {
   const [loading] = useLoading()
 
   return (
-    <div className="bg-neutral">
+    <div 
+    style={{
+      background: `url(${Background})`,
+      backgroundSize: 'cover'
+  }}
+   /* className="bg-neutral" */>
 
       {
         loading ?

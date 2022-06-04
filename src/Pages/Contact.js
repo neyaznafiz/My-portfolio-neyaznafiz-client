@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import Footer from '../Components/Shared/Footer';
 import '../Style/style.css'
 
 const Contact = () => {
@@ -112,11 +113,11 @@ const Contact = () => {
                             {...register("message", {
                                 required: {
                                     value: true,
-                                    message: "message is required",
+                                    message: "Message is required",
                                 },
                                 minLength: {
                                     value: 20,
-                                    message: "your message must be 20 character",
+                                    message: "Your message must be 20 character",
                                 },
                             })}
                         />
@@ -140,13 +141,21 @@ const Contact = () => {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 1, duration: 2 }}
                         className="flex justify-center">
-                        <button type='submit' className='shadow-light-btn'> SEND MESSAGE </button>
+                        <button type='submit' className='btn-selection type-2'> SEND MESSAGE </button>
                         {/* <input type="submit" value='SEND MESSAGE' className="shadow-light-btn" /> */}
                     </motion.div>
 
                 </form>
 
             </div>
+
+            <motion.div className=''
+                        initial={{ y: 300 }}
+                        animate={{ y: 20 }}
+                        transition={{ delay: 0.2, type: 'spring' }}
+                    >
+                        <Footer />
+                    </motion.div>
 
         </div>
     );
