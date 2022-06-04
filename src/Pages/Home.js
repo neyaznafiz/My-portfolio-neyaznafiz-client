@@ -28,12 +28,12 @@ const Home = () => {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.5, duration: 2 }}
-                            className='md:text-9xl text-6xl font-serif md:pt-8'>
+                            className='md:text-9xl text-5xl font-serif md:pt-8'>
                             Neyaz <br /> Mobalik Nafiz.
                         </motion.p>
                         <div className='flex justify-end'>
                             <motion.p
-                                initial={{ x: -900 }}
+                                initial={{ x: -2000 }}
                                 animate={{ x: -0 }}
                                 transition={{ delay: 1.5, duration: 1.5, type: 'spring' }}
                                 className='text-4xl flex items-center '> | Web Developer |  </motion.p>
@@ -54,7 +54,7 @@ const Home = () => {
 
                             <motion.a href="https://github.com/neyaznafiz" target='_blank'
                                 whileHover={{ backgroundColor: ['#ffffff', 'rgba(33, 33, 33, 0)'] }}
-                                className='md:w-32 md:h-32 flex justify-center items-center text-5xl bg-primary text-neutral hover:text-primary m-4 border border-primary'><FaGithub /></motion.a>
+                                className='w-32 h-32 flex justify-center items-center text-5xl bg-primary text-neutral hover:text-primary m-4 border border-primary'><FaGithub /></motion.a>
 
                         </motion.div>
 
@@ -125,9 +125,9 @@ const Home = () => {
 
 
                 <motion.div className='flex justify-end'
-                    initial={{ x: 350 }}
+                    initial={{ x: 2000 }}
                     animate={{ x: 40 }}
-                    transition={{ delay: 1.5, duration: 2, type: 'spring' }}>
+                    transition={{ delay: 1.3, duration: 2, type: 'spring' }}>
                     <img src={signatureWhite} alt="" className='opacity-80 w-72' />
                 </motion.div>
             </div>

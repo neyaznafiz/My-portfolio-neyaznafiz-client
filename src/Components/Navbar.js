@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import Logo from '../Assets/Logo.png'
+import Logo from '../Assets/N-logo.png'
 import '../Style/style.css'
 
 
@@ -11,7 +11,7 @@ const Navbar = ({ children }) => {
 
             <div class="drawer drawer-end">
                 <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
-                <div class="drawer-content flex flex-col lg:mx-64">
+                <div class="drawer-content flex flex-col lg:px-64">
                     {/* <!-- Navbar --> */}
                     <motion.div class="w-full navbar bg-transparent border-b "
                         initial={{ y: -250 }}
@@ -20,7 +20,7 @@ const Navbar = ({ children }) => {
                     >
                         <div class="flex-1">
                             <Link to='/'>
-                                <img src={Logo} alt="" className='h-12 lg:h-20' />
+                                <img src={Logo} alt="" className='h-10 lg:h-10' />
                             </Link>
                         </div>
                         <div class="flex-none lg:hidden">
@@ -64,6 +64,7 @@ const Navbar = ({ children }) => {
 
                 </div>
             </div>
+
 
         </div>
     );

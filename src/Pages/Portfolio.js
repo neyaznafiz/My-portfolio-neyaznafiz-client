@@ -1,9 +1,14 @@
 import React from 'react';
+import Neyaz from '../Assets/neyaz.jpg'
 
 const Portfolio = () => {
     return (
         <div>
-            portfolio
+    
+    <div>
+        
+    </div>
+
         </div>
     );
 };
