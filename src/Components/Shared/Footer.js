@@ -5,6 +5,7 @@ import { TiSocialInstagramCircular } from 'react-icons/ti';
 import { BsFacebook } from 'react-icons/bs';
 import signatureWhite from '../../Assets/Neyaz-signature-white.png'
 import { motion } from 'framer-motion';
+import Typed from "react-typed"
 
 const Footer = () => {
     return (
@@ -21,7 +22,17 @@ const Footer = () => {
                         <img src={signatureWhite} alt="" className='opacity-80 w-48' />
                     </motion.div>
 
-                    <p>Copyright {(new Date().getFullYear())} © All rights reserved by NEYAZ </p>
+                    <Typed
+                        strings={[
+                            "Copyright © All rights reserved by NEYAZ "
+                        ]}
+                        typeSpeed={170}
+                        backSpeed={10}
+                        loop
+                        // className='font-serif'
+                    />
+
+                    {/* <p>Copyright {(new Date().getFullYear())} © All rights reserved by NEYAZ </p> */}
                 </div>
                 <div>
                     <span class="footer-title">Social</span>

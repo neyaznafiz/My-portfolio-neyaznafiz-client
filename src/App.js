@@ -22,7 +22,7 @@ function App() {
       {
         loading ?
           <div className="grid items-center justify-center h-screen">
-            <PuffLoader color='#ffffff' loading={loading} size={150} width='300' />
+            <PuffLoader color='#ffffff' loading={loading} size={250} />
           </div>
           :
           <>
