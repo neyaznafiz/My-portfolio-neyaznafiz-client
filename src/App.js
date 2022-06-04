@@ -14,7 +14,7 @@ import useLoading from "./Hooks/useLoading";
 
 function App() {
 
-  const [loading]=useLoading()
+  const [loading] = useLoading()
 
   return (
     <div className="bg-neutral h-screen">

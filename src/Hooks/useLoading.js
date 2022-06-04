@@ -8,7 +8,7 @@ const useLoading = () => {
         setLoading(true)
         setTimeout(() => {
             setLoading(false)
-        }, 2000);
+        }, 1900);
     }, [])
 
     return [loading, setLoading]
