@@ -7,7 +7,7 @@ import '../Style/style.css'
 const Navbar = ({ children }) => {
 
     return (
-        <div className='bg-neutral text-primary lg:pt-6'>
+        <div className='bg-neutral text-primary md:pt-6'>
 
             <div class="drawer drawer-end">
                 <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />

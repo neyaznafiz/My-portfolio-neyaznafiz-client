@@ -4,6 +4,7 @@ import { FaDev, FaFacebookF, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMailOpen } from 'react-icons/hi';
 import { toast } from 'react-toastify';
 import signatureWhite from '../Assets/Neyaz-signature-white.png'
+import Footer from '../Components/Shared/Footer';
 
 const Home = () => {
 
@@ -19,7 +20,7 @@ const Home = () => {
     // };
 
     return (
-        <div class=" md:px-0">
+        <div class="">
             <div className='px-3'>
                 <div className='md:flex justify-between items-center gap-x-5 pt-10'>
 
@@ -46,7 +47,7 @@ const Home = () => {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.5, duration: 2 }}
                     >
-                       
+
                         {/* github */}
                         <motion.div
                             whileHover={{ backgroundColor: ['#ffffff', 'rgba(33, 33, 33, 0)'] }}
@@ -59,8 +60,8 @@ const Home = () => {
                         </motion.div>
 
 
-                         {/* devto */}
-                         <motion.div
+                        {/* devto */}
+                        <motion.div
                             whileHover={{ backgroundColor: ['#ffffff', 'rgba(33, 33, 33, 0)'] }}
                             className='border bg-primary md:w-40 md:h-40'>
 
@@ -95,7 +96,7 @@ const Home = () => {
 
 
                         </motion.div>
-                        
+
 
                         {/* email */}
                         {/* <div>
@@ -124,14 +125,21 @@ const Home = () => {
                 </div>
 
 
-                <motion.div className='flex justify-end'
+                {/* <motion.div className='flex justify-end py-3'
                     initial={{ x: 2000 }}
                     animate={{ x: 40 }}
                     transition={{ delay: 1.3, duration: 2, type: 'spring' }}>
                     <img src={signatureWhite} alt="" className='opacity-80 w-72' />
-                </motion.div>
+                </motion.div> */}
             </div>
 
+            <motion.div className='md:mt-16'
+            initial={{ y: 300 }}
+            animate={{ y: 20 }}
+            transition={{ delay: 0.2, type: 'spring' }}
+            >
+                <Footer />
+            </motion.div>
         </div>
     );
 };

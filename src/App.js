@@ -17,7 +17,7 @@ function App() {
   const [loading] = useLoading()
 
   return (
-    <div className="bg-neutral h-screen">
+    <div className="bg-neutral">
 
       {
         loading ?
