@@ -3,7 +3,7 @@ import { useRef, useState } from 'react';
 import { FaDev, FaFacebookF, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMailOpen } from 'react-icons/hi';
 import { toast } from 'react-toastify';
-import signatureWhite from '../Assets/signature-white.png'
+import signatureWhite from '../Assets/Neyaz-signature-white.png'
 
 const Home = () => {
 
@@ -128,7 +128,7 @@ const Home = () => {
                     initial={{ x: 350 }}
                     animate={{ x: 40 }}
                     transition={{ delay: 1.5, duration: 2, type: 'spring' }}>
-                    <img src={signatureWhite} alt="" className='opacity-80' />
+                    <img src={signatureWhite} alt="" className='opacity-80 w-72' />
                 </motion.div>
             </div>
 
