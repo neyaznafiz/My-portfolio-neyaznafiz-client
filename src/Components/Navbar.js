@@ -10,13 +10,13 @@ const Navbar = ({ children }) => {
         <div 
         style={{
             background: `url(${Background})`,
-            backgroundSize: 'cover'
+            backgroundSize: 'cover',
         }}
         className=' text-primary md:pt-6'>
 
             <div class="drawer drawer-end">
                 <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
-                <div class="drawer-content flex flex-col lg:px-64">
+                <div class="drawer-content flex flex-col md:px-64 lg:px-64">
                     {/* <!-- Navbar --> */}
                     <motion.div class="w-full navbar bg-transparent border-b "
                         initial={{ y: -250 }}
@@ -55,19 +55,19 @@ const Navbar = ({ children }) => {
                 </div>
                 <div class="drawer-side text-black">
                     <label for="my-drawer-3" class="drawer-overlay"></label>
-                    <ul class="menu p-4 overflow-y-auto opacity-80 bg-neutral text-primary pt-14">
+                    <ul class="menu p-4 overflow-y-auto bg-opacity-50 bg-[#014b4d] text-primary pt-14">
                         {/* <!-- Sidebar content here --> */}
 
                         {/* <Link to='/about' className=''>ABOUT</Link> */}
                         
 
-                        <Link to='/' className='py-2 menu-selection type-1'>HOME</Link>
+                        <Link to='/' className='py-2 btn-selection type-2'>HOME</Link>
 
-                        <Link to='/portfolio' className='py-2 menu-selection type-1'>PORTFOLIO</Link>
+                        <Link to='/portfolio' className='py-2 btn-selection type-2'>PORTFOLIO</Link>
 
-                        <Link to='/blog' className='py-2 menu-selection type-1'>BLOG</Link>
+                        <Link to='/blog' className='py-2 btn-selection type-2'>BLOG</Link>
 
-                        <Link to='/contact' className='py-2 menu-selection type-1'>CONTACT</Link>
+                        <Link to='/contact' className='py-2 btn-selection type-2'>CONTACT</Link>
 
 
                     </ul>

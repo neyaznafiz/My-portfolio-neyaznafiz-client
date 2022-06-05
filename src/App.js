@@ -11,6 +11,7 @@ import { ToastContainer } from "react-toastify";
 import { PuffLoader } from "react-spinners";
 import useLoading from "./Hooks/useLoading";
 import Background from './Assets/tech-background.png'
+import Particle from "./Style/Particle";
 
 
 function App() {
@@ -18,21 +19,25 @@ function App() {
   const [loading] = useLoading()
 
   return (
-    <div 
-    style={{
-      background: `url(${Background})`,
-      backgroundSize: 'cover'
-  }}
+    <div
+      style={{
+        background: `url(${Background})`,
+        backgroundSize: 'cover'
+      }}
    /* className="bg-neutral" */>
 
       {
         loading ?
-          <div className="grid items-center justify-center h-screen">
-            <PuffLoader color='#ffffff' loading={loading} size={250} />
-          </div>
+          <>
+            <Particle />
+            <div className="grid items-center justify-center h-screen">
+              <PuffLoader color='#ffffff' loading={loading} size={250} />
+            </div>
+          </>
           :
           <>
             <Navbar>
+              <Particle />
               <Routes>
 
                 <Route path="/" element={<Home></Home>} />
