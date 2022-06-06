@@ -140,7 +140,7 @@ const Contact = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 1, duration: 2 }}
-                        className="flex justify-center">
+                        className="flex justify-center mb-16">
                         <button type='submit' className='btn-selection type-2'> SEND MESSAGE </button>
                         {/* <input type="submit" value='SEND MESSAGE' className="shadow-light-btn" /> */}
                     </motion.div>

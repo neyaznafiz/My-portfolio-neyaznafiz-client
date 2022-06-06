@@ -3,8 +3,22 @@ import { Link } from 'react-router-dom';
 import Logo from '../Assets/N-logo.png'
 import '../Style/style.css'
 import Background from '../Assets/tech-background.png'
+import { BiCloudDownload } from 'react-icons/bi';
+import Axios from "axios";
+import FileDownload from "js-file-download";
+import fileDownload from 'js-file-download';
 
 const Navbar = ({ children }) => {
+
+const download = (e)=>{
+    Axios({
+        url:'http://localhost:4000/',
+        method: "GET",
+        responseType: "blob"
+    }).then(res => {
+        fileDownload(res.data, "Neyaz Mobalik Nafiz.pdf")
+    })
+}
 
     return (
         <div
@@ -16,7 +30,7 @@ const Navbar = ({ children }) => {
 
             <div className="drawer drawer-end">
                 <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
-                <div className="drawer-content flex flex-col md:px-64 lg:px-64">
+                <div className="drawer-content flex flex-col md:px-32">
                     {/* <!-- Navbar --> */}
                     <motion.div className="w-full navbar bg-transparent border-b "
                         initial={{ y: -250 }}
@@ -39,6 +53,7 @@ const Navbar = ({ children }) => {
 
                                 {/* <Link to='/about' className=''>ABOUT</Link> */}
 
+
                                 <Link to='/' className='menu-selection type-1'>HOME</Link>
 
                                 <Link to='/portfolio' className='menu-selection type-1'>PORTFOLIO</Link>
@@ -46,6 +61,8 @@ const Navbar = ({ children }) => {
                                 <Link to='/blog' className='menu-selection type-1'>BLOG</Link>
 
                                 <Link to='/contact' className='menu-selection type-1'>CONTACT</Link>
+
+                                <button onClick={(e)=>download(e)} className='btn2-selection type-2'> DOWNLOAD RESUME <BiCloudDownload className='text-xl ml-2' /> </button>
 
                             </ul>
                         </div>
@@ -69,6 +86,7 @@ const Navbar = ({ children }) => {
 
                         <Link to='/contact' className='py-2 btn-selection type-2'>CONTACT</Link>
 
+                        <button className='btn-selection type-2'> RESUME <BiCloudDownload className='text-2xl ml-2'/> </button>
 
                     </ul>
 

@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
-// import { useRef, useState } from 'react';
 import { FaDev, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMailOpen } from 'react-icons/hi';
+import Footer from '../Components/Shared/Footer';
+// import { useRef, useState } from 'react';
+// import { BiCloudDownload } from 'react-icons/bi';
 // import { toast } from 'react-toastify';
 // import signatureWhite from '../Assets/Neyaz-signature-white.png'
-import Footer from '../Components/Shared/Footer';
 
 const Home = () => {
 
@@ -23,7 +24,7 @@ const Home = () => {
         <div className="">
 
             <div className='px-3'>
-                <div className='md:flex justify-between items-center gap-x-5 pt-10'>
+                <div className=' md:flex justify-between items-center gap-x-5 pt-10'>
 
                     <div>
                         <motion.p
@@ -134,6 +135,12 @@ const Home = () => {
                     animate={{ x: 40 }}
                     transition={{ delay: 1.3, duration: 2, type: 'spring' }}>
                     <img src={signatureWhite} alt="" className='opacity-80 w-72' />
+                </motion.div> */}
+                {/* <motion.div className='flex justify-end py-3 mr-10'
+                    initial={{ x: 2000 }}
+                    animate={{ x: 40 }}
+                    transition={{ delay: 1.3, duration: 2, type: 'spring' }}>
+                    <button className='btn2-selection type-2'> DOWNLOAD RESUME <BiCloudDownload className='text-xl ml-2' /> </button>
                 </motion.div> */}
             </div>
 
