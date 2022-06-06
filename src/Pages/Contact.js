@@ -6,7 +6,7 @@ import '../Style/style.css'
 
 const Contact = () => {
 
-    const { register, handleSubmit, watch, htmlFormState: { errors } } = useForm();
+    const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data => console.log(data);
 
     return (
@@ -105,7 +105,7 @@ const Contact = () => {
                         initial={{ y: 900 }}
                         animate={{ y: 0 }}
                         transition={{ delay: 0.2, type: 'spring' }}
-                        className="htmlForm-control  bg-transparent border-0">
+                        className="form-control  bg-transparent border-0">
                         {/* <label className="label">
                         <span className="label-text">Message</span>
                     </label> */}
