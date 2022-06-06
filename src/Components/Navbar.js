@@ -7,34 +7,34 @@ import Background from '../Assets/tech-background.png'
 const Navbar = ({ children }) => {
 
     return (
-        <div 
-        style={{
-            background: `url(${Background})`,
-            backgroundSize: 'cover',
-        }}
-        className=' text-primary md:pt-6'>
+        <div
+            style={{
+                background: `url(${Background})`,
+                backgroundSize: 'cover',
+            }}
+            className=' text-primary md:pt-6'>
 
-            <div class="drawer drawer-end">
-                <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
-                <div class="drawer-content flex flex-col md:px-64 lg:px-64">
+            <div className="drawer drawer-end">
+                <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
+                <div className="drawer-content flex flex-col md:px-64 lg:px-64">
                     {/* <!-- Navbar --> */}
-                    <motion.div class="w-full navbar bg-transparent border-b "
+                    <motion.div className="w-full navbar bg-transparent border-b "
                         initial={{ y: -250 }}
                         animate={{ y: -10 }}
                         transition={{ delay: 0.2, type: 'spring' }}
                     >
-                        <div class="flex-1">
+                        <div className="flex-1">
                             <Link to='/'>
                                 <img src={Logo} alt="" className='h-10 lg:h-10' />
                             </Link>
                         </div>
-                        <div class="flex-none lg:hidden">
-                            <label for="my-drawer-3" class="btn btn-square btn-ghost">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                        <div className="flex-none lg:hidden">
+                            <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                             </label>
                         </div>
-                        <div class="flex-none hidden lg:block">
-                            <ul class="menu menu-horizontal gap-5 pr-6 pt-3">
+                        <div className="flex-none hidden lg:block">
+                            <ul className="menu menu-horizontal gap-5 pr-6 pt-3">
                                 {/* <!-- Navbar menu content here --> */}
 
                                 {/* <Link to='/about' className=''>ABOUT</Link> */}
@@ -53,13 +53,13 @@ const Navbar = ({ children }) => {
                     {/* <!-- Page content here --> */}
                     {children}
                 </div>
-                <div class="drawer-side text-black">
-                    <label for="my-drawer-3" class="drawer-overlay"></label>
-                    <ul class="menu p-4 overflow-y-auto bg-opacity-50 bg-[#014b4d] text-primary pt-14">
+                <div className="drawer-side text-black">
+                    <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
+                    <ul className="menu p-4 overflow-y-auto bg-opacity-50 bg-[#014b4d] text-primary pt-14">
                         {/* <!-- Sidebar content here --> */}
 
                         {/* <Link to='/about' className=''>ABOUT</Link> */}
-                        
+
 
                         <Link to='/' className='py-2 btn-selection type-2'>HOME</Link>
 

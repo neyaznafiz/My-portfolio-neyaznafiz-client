@@ -6,7 +6,7 @@ import '../Style/style.css'
 
 const Contact = () => {
 
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit, watch, htmlFormState: { errors } } = useForm();
     const onSubmit = data => console.log(data);
 
     return (
@@ -23,7 +23,7 @@ const Contact = () => {
 
                 </motion.div>
 
-                <form onSubmit={handleSubmit()}>
+                <htmlForm onSubmit={handleSubmit()}>
 
                     <div className='md:flex gap-x-5'>
                         {/* name */}
@@ -31,8 +31,8 @@ const Contact = () => {
                             initial={{ x: -2000 }}
                             animate={{ x: -0 }}
                             transition={{ duration: 1.5, type: 'spring' }}
-                            className="form-control w-full bg-transparent border-0">
-                            {/* <label className="form-label text-white ">Your Name</label> */}
+                            className="htmlForm-control w-full bg-transparent border-0">
+                            {/* <label className="htmlForm-label text-white ">Your Name</label> */}
                             <input type="text"
                                 placeholder='NAME'
                                 className="input rounded-none w-full bg-transparent border border-white text-white"
@@ -53,8 +53,8 @@ const Contact = () => {
                             initial={{ x: 2000 }}
                             animate={{ x: 0 }}
                             transition={{ duration: 1.5, type: 'spring' }}
-                            className="form-control w-full bg-transparent border-0">
-                            {/* <label className="form-label text-white bg-inherit">Your Email</label> */}
+                            className="htmlForm-control w-full bg-transparent border-0">
+                            {/* <label className="htmlForm-label text-white bg-inherit">Your Email</label> */}
                             <input type="email"
                                 placeholder="EMAIL"
                                 className="input rounded-none w-full bg-transparent border border-white  text-white"
@@ -82,8 +82,8 @@ const Contact = () => {
                         initial={{ y: 900 }}
                         animate={{ y: 0 }}
                         transition={{ type: 'spring' }}
-                        className="form-control w-full bg-transparent border-0">
-                        {/* <label className="form-label text-white ">Subject</label> */}
+                        className="htmlForm-control w-full bg-transparent border-0">
+                        {/* <label className="htmlForm-label text-white ">Subject</label> */}
                         <input type="text"
                             placeholder='SUBJECT'
                             className="input rounded-none w-full bg-transparent border border-white  text-white"
@@ -105,7 +105,7 @@ const Contact = () => {
                         initial={{ y: 900 }}
                         animate={{ y: 0 }}
                         transition={{ delay: 0.2, type: 'spring' }}
-                        className="form-control  bg-transparent border-0">
+                        className="htmlForm-control  bg-transparent border-0">
                         {/* <label className="label">
                         <span className="label-text">Message</span>
                     </label> */}
@@ -145,17 +145,17 @@ const Contact = () => {
                         {/* <input type="submit" value='SEND MESSAGE' className="shadow-light-btn" /> */}
                     </motion.div>
 
-                </form>
+                </htmlForm>
 
             </div>
 
             <motion.div className=''
-                        initial={{ y: 300 }}
-                        animate={{ y: 20 }}
-                        transition={{ delay: 0.2, type: 'spring' }}
-                    >
-                        <Footer />
-                    </motion.div>
+                initial={{ y: 300 }}
+                animate={{ y: 20 }}
+                transition={{ delay: 0.2, type: 'spring' }}
+            >
+                <Footer />
+            </motion.div>
 
         </div>
     );

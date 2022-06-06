@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <div className=''>
 
-            <footer class="footer p-10  text-neutral-content flex items-center justify-between">
+            <footer className="footer p-10  text-neutral-content flex items-center justify-between">
                 <div>
                     <FaSlackHash className='text-5xl' />
 
@@ -34,8 +34,8 @@ const Footer = () => {
                     {/* <p>Copyright {(new Date().getFullYear())} © All rights reserved by NEYAZ </p> */}
                 </div>
                 <div>
-                    <span class="footer-title">Social</span>
-                    <div class="grid grid-flow-col items-center gap-4">
+                    <span className="footer-title text-white">Social</span>
+                    <div className="grid grid-flow-col items-center gap-4">
 
                         <a href='https://www.facebook.com/neyaznafiz/' target='_blank'>
                             <BsFacebook className='text-[30px]' />
