@@ -12,7 +12,7 @@ const Navbar = ({ children }) => {
 
 const download = (e)=>{
     Axios({
-        url:'http://localhost:4000/',
+        url:'https://obscure-ridge-82105.herokuapp.com/',
         method: "GET",
         responseType: "blob"
     }).then(res => {
@@ -86,7 +86,7 @@ const download = (e)=>{
 
                         <Link to='/contact' className='py-2 btn-selection type-2'>CONTACT</Link>
 
-                        <button className='btn-selection type-2'> RESUME <BiCloudDownload className='text-2xl ml-2'/> </button>
+                        <button onClick={(e)=>download(e)} className='btn-selection type-2'> RESUME <BiCloudDownload className='text-2xl ml-2'/> </button>
 
                     </ul>
 
