@@ -4,21 +4,8 @@ import Logo from '../Assets/N-logo.png'
 import '../Style/style.css'
 import Background from '../Assets/tech-background.png'
 import { BiCloudDownload } from 'react-icons/bi';
-import Axios from "axios";
-import FileDownload from "js-file-download";
-import fileDownload from 'js-file-download';
 
 const Navbar = ({ children }) => {
-
-const download = (e)=>{
-    Axios({
-        url:'https://obscure-ridge-82105.herokuapp.com/',
-        method: "GET",
-        responseType: "blob"
-    }).then(res => {
-        fileDownload(res.data, "Neyaz Mobalik Nafiz.pdf")
-    })
-}
 
     return (
         <div
@@ -48,11 +35,22 @@ const download = (e)=>{
                             </label>
                         </div>
                         <div className="flex-none hidden lg:block">
-                            <ul className="menu menu-horizontal gap-5 pr-6 pt-3">
+                            <ul className="menu menu-horizontal gap-5 pt-3">
                                 {/* <!-- Navbar menu content here --> */}
 
                                 {/* <Link to='/about' className=''>ABOUT</Link> */}
 
+                                <motion.a
+                                    href='https://drive.google.com/file/d/1RJKQbna1BbNCASHx2zt32oz1uYC2_t0B/view?usp=sharing'
+                                    target='_blank'
+                                    className='btn2-selection type-2'
+                                    initial={{ y: -250 }}
+                                    animate={{ y: -2 }}
+                                    transition={{ delay: 1.5, type: 'spring' }}
+                                >
+                                    DOWNLOAD RESUME
+                                    <BiCloudDownload className='text-xl ml-2' />
+                                </motion.a>
 
                                 <Link to='/' className='menu-selection type-1'>HOME</Link>
 
@@ -62,7 +60,6 @@ const download = (e)=>{
 
                                 <Link to='/contact' className='menu-selection type-1'>CONTACT</Link>
 
-                                <button onClick={(e)=>download(e)} className='btn2-selection type-2'> DOWNLOAD RESUME <BiCloudDownload className='text-xl ml-2' /> </button>
 
                             </ul>
                         </div>
@@ -86,7 +83,12 @@ const download = (e)=>{
 
                         <Link to='/contact' className='py-2 btn-selection type-2'>CONTACT</Link>
 
-                        <button onClick={(e)=>download(e)} className='btn-selection type-2'> RESUME <BiCloudDownload className='text-2xl ml-2'/> </button>
+                        <a
+                            href='https://drive.google.com/file/d/1RJKQbna1BbNCASHx2zt32oz1uYC2_t0B/view?usp=sharing'
+                            target='_blank'
+                            className='btn-selection type-2'>
+                            RESUME <BiCloudDownload className='text-2xl ml-2' />
+                        </a>
 
                     </ul>
 

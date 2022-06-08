@@ -24,7 +24,7 @@ const Footer = () => {
 
                     <Typed
                         strings={[
-                            "Copyright © All rights reserved by NEYAZ "
+                            "Copyright 2022 © All rights reserved by NEYAZ "
                         ]}
                         typeSpeed={170}
                         backSpeed={10}

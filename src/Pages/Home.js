@@ -22,7 +22,7 @@ const Home = () => {
 
     return (
         <div className="">
-
+           
             <div className='px-3'>
                 <div className=' md:flex justify-between items-center gap-x-5 pt-10'>
 
@@ -31,7 +31,7 @@ const Home = () => {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.5, duration: 2 }}
-                            className='md:text-7xl lg:text-9xl text-5xl font-serif md:pt-8'>
+                            className='md:text-7xl lg:text-9xl text-5xl font-serif md:pt-8 '>
                             Neyaz <br /> Mobalik Nafiz.
                         </motion.p>
                         <div className='flex justify-end'>
@@ -39,7 +39,7 @@ const Home = () => {
                                 initial={{ x: -2000 }}
                                 animate={{ x: -0 }}
                                 transition={{ delay: 1.3, duration: 1.5, type: 'spring' }}
-                                className='text-4xl flex items-center '> | Web Developer |  </motion.p>
+                                className='text-4xl flex items-center'> | Web Developer |  </motion.p>
                         </div>
                     </div>
 

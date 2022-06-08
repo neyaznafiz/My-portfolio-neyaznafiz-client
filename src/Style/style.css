@@ -37,7 +37,7 @@
   /* for send mesage */
 .btn-selection {
   position: relative;
-  width: 200px;
+  width: 240px;
   height: 40px;
   letter-spacing: 4px;
   display: flex;
@@ -72,9 +72,9 @@
 /* for resume download */
 .btn2-selection {
   position: relative;
-  width: 300px;
+  width: 295px;
   height: 40px;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   display: flex;
   justify-content: center;
   align-items: center;
