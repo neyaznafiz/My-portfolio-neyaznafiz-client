@@ -1,13 +1,24 @@
 import { motion } from 'framer-motion';
-import React from 'react';
-import { useForm } from 'react-hook-form';
+import React, { useRef } from 'react';
 import Footer from '../Components/Shared/Footer';
 import '../Style/style.css'
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
 
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_7emlryc', 'template_829aly8', form.current, 'OXrKX6qv6uRwwe5Dy')
+            .then((result) => {
+                console.log(result.text);
+                console.log('message send');
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
 
     return (
         <div>
@@ -23,28 +34,25 @@ const Contact = () => {
 
                 </motion.div>
 
-                <htmlForm onSubmit={handleSubmit()}>
+
+
+                <form ref={form} onSubmit={sendEmail}>
 
                     <div className='md:flex gap-x-5'>
+
                         {/* name */}
                         <motion.div
                             initial={{ x: -2000 }}
                             animate={{ x: -0 }}
                             transition={{ duration: 1.5, type: 'spring' }}
                             className="htmlForm-control w-full bg-transparent border-0">
-                            {/* <label className="htmlForm-label text-white ">Your Name</label> */}
-                            <input type="text"
+
+                            <input
+                                type="text"
+                                name="name"
                                 placeholder='NAME'
                                 className="input rounded-none w-full bg-transparent border border-white text-white"
-                                {...register("name", {
-                                    required: {
-                                        value: true,
-                                        message: 'Name is Required'
-                                    }
-                                })} />
-                            <label className="label">
-                                {errors.name?.type === 'required' && <span className="label-text-alt text-red-500">{errors.name.message}</span>}
-                            </label>
+                            />
 
                         </motion.div>
 
@@ -54,48 +62,31 @@ const Contact = () => {
                             animate={{ x: 0 }}
                             transition={{ duration: 1.5, type: 'spring' }}
                             className="htmlForm-control w-full bg-transparent border-0">
-                            {/* <label className="htmlForm-label text-white bg-inherit">Your Email</label> */}
-                            <input type="email"
-                                placeholder="EMAIL"
-                                className="input rounded-none w-full bg-transparent border border-white  text-white"
-                                {...register("email", {
-                                    required: {
-                                        value: true,
-                                        message: 'Email is Required'
-                                    },
-                                    pattern: {
-                                        value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
-                                        message: 'Provide a valid email please'
-                                    }
-                                })} />
-                            <label className="label">
-                                {errors.email?.type === 'required' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
-                                {errors.email?.type === 'pattern' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
-                            </label>
+
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder='EMAIL'
+                                className="input rounded-none w-full bg-transparent border border-white text-white"
+                            />
 
                         </motion.div>
-                    </div>
 
+                    </div>
 
                     {/* subject */}
                     <motion.div
                         initial={{ y: 900 }}
                         animate={{ y: 0 }}
                         transition={{ type: 'spring' }}
-                        className="htmlForm-control w-full bg-transparent border-0">
-                        {/* <label className="htmlForm-label text-white ">Subject</label> */}
-                        <input type="text"
+                        className="htmlForm-control w-full bg-transparent border-0 my-6">
+
+                        <input
+                            type="text"
+                            name="subject"
                             placeholder='SUBJECT'
                             className="input rounded-none w-full bg-transparent border border-white  text-white"
-                            {...register("subject", {
-                                required: {
-                                    value: true,
-                                    message: 'Subject is Required'
-                                }
-                            })} />
-                        <label className="label">
-                            {errors.subject?.type === 'required' && <span className="label-text-alt text-red-500">{errors.subject.message}</span>}
-                        </label>
+                        />
 
                     </motion.div>
 
@@ -105,47 +96,26 @@ const Contact = () => {
                         initial={{ y: 900 }}
                         animate={{ y: 0 }}
                         transition={{ delay: 0.2, type: 'spring' }}
-                        className="form-control  bg-transparent border-0">
-                        {/* <label className="label">
-                        <span className="label-text">Message</span>
-                    </label> */}
-                        <textarea type="text" placeholder="MESSAGE" name="message" className="input rounded-none border-white h-[200px] bg-transparent"
-                            {...register("message", {
-                                required: {
-                                    value: true,
-                                    message: "Message is required",
-                                },
-                                minLength: {
-                                    value: 20,
-                                    message: "Your message must be 20 character",
-                                },
-                            })}
+                        className="form-control  bg-transparent border-0 my-6">
+
+                        <textarea
+                            name="message"
+                            placeholder="MESSAGE"
+                            className="input rounded-none border-white h-[200px] bg-transparent"
                         />
-                        <label className="label">
-                            {errors.message?.type === "required" && (
-                                <span className="label-text-alt text-red-500">
-                                    {errors.message.message}
-                                </span>
-                            )}
-                            {errors.message?.type === "minLength" && (
-                                <span className="label-text-alt text-red-500">
-                                    {errors.message.message}
-                                </span>
-                            )}
-                        </label>
                     </motion.div>
 
-
+                    {/* send button */}
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 1, duration: 2 }}
                         className="flex justify-center mb-16">
                         <button type='submit' className='btn-selection type-2'> SEND MESSAGE </button>
-                        {/* <input type="submit" value='SEND MESSAGE' className="shadow-light-btn" /> */}
+                    {/* <input type="submit" value="Send" /> */}
                     </motion.div>
 
-                </htmlForm>
+                </form>
 
             </div>
 
