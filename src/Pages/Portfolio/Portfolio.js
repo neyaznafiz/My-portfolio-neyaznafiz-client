@@ -17,7 +17,7 @@ const Portfolio = () => {
 
             <Outlet />
 
-            <motion.div className='md:mt-20 md:px-32'
+            <motion.div className=' md:px-32'
                 initial={{ y: 300 }}
                 animate={{ y: 20 }}
                 transition={{ delay: 0.2, type: 'spring' }}
