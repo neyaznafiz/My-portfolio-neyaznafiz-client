@@ -5,15 +5,19 @@ import Footer from '../../Components/Shared/Footer';
 
 const Portfolio = () => {
     return (
-        <div className='bg-[#014b4d] bg-opacity-60' >
+        <div className='' >
 
-            <div className='flex justify-end'>
+            <motion.div 
+             initial={{ x: -2000 }}
+             animate={{ x: 0 }}
+             transition={{ duration: 1.5, type: 'spring' }}
+            className='flex justify-end'>
                 <div className='flex justify-center gap-x-5 border-b-2 w-56 pt-8 mr-20 text-lg'>
                     <Link to='/portfolio/about' className='font-semibold text-white menu-selection type-1'>ABOUT</Link>
 
                     <Link to='/portfolio/projects' className='font-semibold text-white menu-selection type-1'>PROJECTS</Link>
                 </div>
-            </div>
+            </motion.div>
 
             <Outlet />
 
