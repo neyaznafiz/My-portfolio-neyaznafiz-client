@@ -50,10 +50,7 @@ function App() {
               </Routes>
             </Navbar>
             <ToastContainer />
-            <Toaster 
-            position="top-center"
-            
-            />
+            <Toaster />
           </>
       }
     </div>

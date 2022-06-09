@@ -45,7 +45,7 @@ const Navbar = ({ children }) => {
                                     target='_blank'
                                     className='btn2-selection type-2'
                                     initial={{ y: -250 }}
-                                    animate={{ y: -2 }}
+                                    animate={{ y: -1 }}
                                     transition={{ delay: 1.5, type: 'spring' }}
                                 >
                                     DOWNLOAD RESUME

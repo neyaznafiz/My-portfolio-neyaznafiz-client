@@ -4,6 +4,8 @@ import { FaDev, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMailOpen } from 'react-icons/hi';
 import Footer from '../Components/Shared/Footer';
 
+
+
 const Home = () => {
 
     const handleEmailCopy = () => {
@@ -18,8 +20,8 @@ const Home = () => {
                 background: 'transparent',
                 color: '#fff',
                 border: '2px solid white',
-                marginBottom: '300px',
-                marginRight: '55px'
+                marginBottom: '290px',
+                marginRight: '55px',               
             },
         })
 

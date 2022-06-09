@@ -8,6 +8,7 @@ import toast from 'react-hot-toast';
 
 const Contact = () => {
 
+
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -25,7 +26,7 @@ const Contact = () => {
                 icon: '✔️',
                 duration: 4000,
                 position: 'bottom-right',
-        
+
                 style: {
                     background: 'transparent',
                     color: '#fff',
@@ -136,8 +137,8 @@ const Contact = () => {
 
                     </motion.div>
 
-
                 </form>
+
 
             </div>
 
