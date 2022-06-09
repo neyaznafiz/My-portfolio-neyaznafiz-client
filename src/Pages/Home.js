@@ -115,7 +115,7 @@ const Home = () => {
 
             </div>
 
-            <motion.div className='md:mt-16'
+            <motion.div className='md:mt-20'
                 initial={{ y: 300 }}
                 animate={{ y: 20 }}
                 transition={{ delay: 0.2, type: 'spring' }}

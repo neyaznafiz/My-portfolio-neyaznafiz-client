@@ -6,11 +6,12 @@ import { BsFacebook } from 'react-icons/bs';
 import signatureWhite from '../../Assets/Neyaz-signature-white.png'
 import { motion } from 'framer-motion';
 import Typed from "react-typed"
+import Particle from '../../Style/Particle';
 
 const Footer = () => {
     return (
         <div className=''>
-
+            
             <footer className="footer p-10  text-neutral-content flex items-center justify-between">
                 <div>
                     <FaSlackHash className='text-5xl' />
@@ -51,8 +52,9 @@ const Footer = () => {
 
                     </div>
                 </div>
-            </footer>
 
+            </footer>
+            <Particle></Particle>
         </div>
     );
 };

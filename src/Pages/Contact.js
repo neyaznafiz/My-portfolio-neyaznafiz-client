@@ -46,7 +46,7 @@ const Contact = () => {
     return (
         <div>
 
-            <div className=' md:pt-32 grid items-center md:px-60 px-10 '>
+            <div className=' md:pt-28 grid items-center md:px-60 px-10 '>
 
                 <motion.div
                     initial={{ opacity: 0 }}
@@ -83,7 +83,7 @@ const Contact = () => {
                             initial={{ x: 2000 }}
                             animate={{ x: 0 }}
                             transition={{ duration: 1.5, type: 'spring' }}
-                            className="htmlForm-control w-full bg-transparent border-0">
+                            className="htmlForm-control w-full bg-transparent border-0 mt-6 md:mt-0 lg:mt-0">
 
                             <input
                                 type="email"

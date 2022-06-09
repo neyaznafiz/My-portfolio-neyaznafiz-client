@@ -24,6 +24,7 @@ const Navbar = ({ children }) => {
                         animate={{ y: -10 }}
                         transition={{ delay: 0.2, type: 'spring' }}
                     >
+                        {/* <Particle /> */}
                         <div className="flex-1">
                             <Link to='/'>
                                 <img src={Logo} alt="" className='h-10 lg:h-10' />

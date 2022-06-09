@@ -26,6 +26,7 @@
     "react-tsparticles": "^2.0.6",
     "react-typed": "^1.2.0",
     "tsparticles": "^2.0.6",
+    "tw-elements": "^1.0.0-alpha12",
     "web-vitals": "^2.1.0"
   },
   "scripts": {

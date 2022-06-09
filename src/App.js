@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Starting from "./Pages/Home";
-import About from "./Pages/About";
-import Portfolio from "./Pages/Portfolio";
+import About from "./Pages/Portfolio/About";
+import Portfolio from "./Pages/Portfolio/Portfolio";
 import Contact from "./Pages/Contact";
 import Home from "./Pages/Home";
 import Blog from "./Pages/Blog";
@@ -13,6 +13,7 @@ import { PuffLoader } from "react-spinners";
 import useLoading from "./Hooks/useLoading";
 import Background from './Assets/tech-background.png'
 import Particle from "./Style/Particle";
+import Projects from "./Pages/Portfolio/Projects";
 
 
 function App() {
@@ -38,12 +39,18 @@ function App() {
           :
           <>
             <Navbar>
-              <Particle />
+              {/* <Particle /> */}
               <Routes>
 
                 <Route path="/" element={<Home></Home>} />
-                {/* <Route path='/about' element={<About></About>} /> */}
-                <Route path='/portfolio' element={<Portfolio></Portfolio>} />
+
+                <Route path='/portfolio' element={<Portfolio></Portfolio>}>
+
+                <Route path='about' element={<About></About>} />
+                <Route path='projects' element={<Projects></Projects>} />
+
+                </Route>
+
                 <Route path='/blog' element={<Blog></Blog>} />
                 <Route path='/contact' element={<Contact></Contact>} />
 
