@@ -55,7 +55,7 @@ const Navbar = ({ children }) => {
 
                                 <Link to='/' className='menu-selection type-1'>HOME</Link>
 
-                                <Link to='/portfolio' className='menu-selection type-1'>PORTFOLIO</Link>
+                                <Link to='/portfolio/about' className='menu-selection type-1'>PORTFOLIO</Link>
 
                                 <Link to='/blog' className='menu-selection type-1'>BLOG</Link>
 
@@ -78,7 +78,7 @@ const Navbar = ({ children }) => {
 
                         <Link to='/' className='py-2 btn-selection type-2'>HOME</Link>
 
-                        <Link to='/portfolio' className='py-2 btn-selection type-2'>PORTFOLIO</Link>
+                        <Link to='/portfolio/about' className='py-2 btn-selection type-2'>PORTFOLIO</Link>
 
                         <Link to='/blog' className='py-2 btn-selection type-2'>BLOG</Link>
 
