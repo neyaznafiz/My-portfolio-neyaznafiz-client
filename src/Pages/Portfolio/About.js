@@ -15,7 +15,7 @@ const About = () => {
             </div>
 
             <div className='flex justify-center py-20'>
-                <p className='w-[1040px] text-center text-xl'>I am a Web Developer With a good understanding of building modern dynamic websites and a love for React. My background is in Computer Science and Technology and I am still studying. My future vision is I want to see myself in the future as a great programmer. My interest is in machine learning and ethical hacking. I hope, my hard work takes me to my goal. Ready to give my best to any aspiring.
+                <p className='w-[1080px] text-center text-xl'>I am a Web Developer With a good understanding of building modern dynamic websites and a love for React. I am a student of Computer Science and Technology. My future vision is I want to see myself in the future as a great programmer. My interest is in machine learning and ethical hacking. I hope, my hard work takes me to my goal. Ready to give my best to any aspiring.
                 </p>
             </div>
 
