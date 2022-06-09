@@ -3,6 +3,7 @@ import toast from 'react-hot-toast';
 import { FaDev, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMailOpen } from 'react-icons/hi';
 import Footer from '../Components/Shared/Footer';
+import Particle from '../Style/Particle';
 
 
 
@@ -49,7 +50,7 @@ const Home = () => {
                                 className='text-4xl flex items-center'> | Web Developer |  </motion.p>
                         </div>
                     </div>
-
+                    
                     <motion.div
                         className='grid grid-cols-2 gap-5 pb-16 pt-10'
                         initial={{ opacity: 0 }}
@@ -81,7 +82,7 @@ const Home = () => {
                                 className='w-32 h-32 flex justify-center items-center text-5xl text-primary  hover:text-neutral m-4 border border-primary'><FaDev /></motion.a>
 
                         </motion.div>
-
+                        
 
                         {/* linkdin */}
                         <motion.div
@@ -110,9 +111,8 @@ const Home = () => {
                         </motion.div>
 
                     </motion.div>
-
                 </div>
-
+                    <Particle></Particle>
             </div>
 
             <motion.div className='md:mt-20'

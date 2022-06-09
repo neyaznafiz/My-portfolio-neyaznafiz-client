@@ -34,6 +34,7 @@ const Footer = () => {
 
                     {/* <p>Copyright {(new Date().getFullYear())} © All rights reserved by NEYAZ </p> */}
                 </div>
+                <Particle></Particle>
                 <div>
                     <span className="footer-title text-white">Social</span>
                     <div className="grid grid-flow-col items-center gap-4">
@@ -54,7 +55,7 @@ const Footer = () => {
                 </div>
 
             </footer>
-            <Particle></Particle>
+            
         </div>
     );
 };

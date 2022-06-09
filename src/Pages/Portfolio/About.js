@@ -2,10 +2,10 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div className='mt-16 mx-40'>
+        <div className='mt-16 mx-4 md:mx-40'>
 
             <div className='border-l-2 pl-2'>
-                <p className='text-4xl font-bold'>Neyaz Mobalik Nafiz</p>
+                <p className='text-3xl md:text-4xl font-bold'>Neyaz Mobalik Nafiz</p>
                 <p className='text-lg font-semibold pl-1'>Web Developer (MERN Stack)</p>
             </div>
 
@@ -25,7 +25,7 @@ const About = () => {
                     <p className='text-2xl font-bold my-3'>SKILLS</p>
 
                     <p className='pl-6 flex text-lg'>Comfortable:
-                        <p className='text- pl-20'>
+                        <p className='pl-10 md:pl-20'>
                             React | JavaScript | ES6 | CSS | Tailwind CSS | Bootstrap <br />
                             Framer Motion | NodeJS | ExpressJS | MongoDB <br />
                             Stripe | Firebase | Netlify | Heroku
@@ -33,7 +33,7 @@ const About = () => {
                     </p>
 
                     <p className='pl-6 flex text-lg py-10'>Familiar:
-                        <p className='text- pl-[143px]'>
+                        <p className='pl-[80px] md:pl-[143px]'>
                             React Native | NextJS | TypeScript <br />
                             Mongoose | Socket.io
 
@@ -42,7 +42,7 @@ const About = () => {
 
 
                     <p className='pl-6 flex text-lg'>Tools:
-                        <p className='text- pl-[163px]'>
+                        <p className='pl-[80px] md:pl-[163px]'>
                             Git | VS Code | Figma <br />
                             Chrome DevTools | React Developer Tools
 
