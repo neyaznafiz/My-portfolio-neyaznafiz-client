@@ -8,6 +8,7 @@ import Home from "./Pages/Home";
 import Blog from "./Pages/Blog";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from "react-toastify";
+import { Toaster } from 'react-hot-toast';
 import { PuffLoader } from "react-spinners";
 import useLoading from "./Hooks/useLoading";
 import Background from './Assets/tech-background.png'
@@ -49,6 +50,10 @@ function App() {
               </Routes>
             </Navbar>
             <ToastContainer />
+            <Toaster 
+            position="top-center"
+            
+            />
           </>
       }
     </div>

@@ -3,6 +3,8 @@ import React, { useRef } from 'react';
 import Footer from '../Components/Shared/Footer';
 import '../Style/style.css'
 import emailjs from '@emailjs/browser';
+import toast from 'react-hot-toast';
+
 
 const Contact = () => {
 
@@ -11,13 +13,33 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_7emlryc', 'template_829aly8', form.current, 'OXrKX6qv6uRwwe5Dy')
-            .then((result) => {
-                console.log(result.text);
-                console.log('message send');
-            }, (error) => {
-                console.log(error.text);
-            });
+        emailjs.sendForm(
+
+            'service_7emlryc',
+            'template_829aly8',
+            form.current,
+            'OXrKX6qv6uRwwe5Dy'
+
+        ).then((result) => {
+            toast('Email Send', {
+                icon: '✔️',
+                duration: 4000,
+                position: 'bottom-right',
+        
+                style: {
+                    background: 'transparent',
+                    color: '#fff',
+                    border: '2px solid white',
+                    marginBottom: '300px',
+                    marginRight: '55px'
+                },
+            })
+            console.log(result.text);
+            console.log('message send');
+        }, (error) => {
+
+            console.log(error.text);
+        });
     };
 
     return (
@@ -35,7 +57,6 @@ const Contact = () => {
                 </motion.div>
 
 
-
                 <form ref={form} onSubmit={sendEmail}>
 
                     <div className='md:flex gap-x-5'>
@@ -51,7 +72,7 @@ const Contact = () => {
                                 type="text"
                                 name="name"
                                 placeholder='NAME'
-                                className="input rounded-none w-full bg-transparent border border-white text-white"
+                                className="input rounded-none w-full bg-transparent border border-white text-white text-lg"
                             />
 
                         </motion.div>
@@ -67,7 +88,7 @@ const Contact = () => {
                                 type="email"
                                 name="email"
                                 placeholder='EMAIL'
-                                className="input rounded-none w-full bg-transparent border border-white text-white"
+                                className="input rounded-none w-full bg-transparent border border-white text-white text-lg"
                             />
 
                         </motion.div>
@@ -85,7 +106,7 @@ const Contact = () => {
                             type="text"
                             name="subject"
                             placeholder='SUBJECT'
-                            className="input rounded-none w-full bg-transparent border border-white  text-white"
+                            className="input rounded-none w-full bg-transparent border border-white  text-white text-lg"
                         />
 
                     </motion.div>
@@ -96,24 +117,25 @@ const Contact = () => {
                         initial={{ y: 900 }}
                         animate={{ y: 0 }}
                         transition={{ delay: 0.2, type: 'spring' }}
-                        className="form-control  bg-transparent border-0 my-6">
+                        className="form-control bg-transparent border-0 my-6">
 
                         <textarea
                             name="message"
                             placeholder="MESSAGE"
-                            className="input rounded-none border-white h-[200px] bg-transparent"
+                            className="input rounded-none py-3 text-lg border-white h-[200px] bg-transparent "
                         />
                     </motion.div>
 
-                    {/* send button */}
+                    {/* submit button */}
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 1, duration: 2 }}
                         className="flex justify-center mb-16">
                         <button type='submit' className='btn-selection type-2'> SEND MESSAGE </button>
-                    {/* <input type="submit" value="Send" /> */}
+
                     </motion.div>
+
 
                 </form>
 

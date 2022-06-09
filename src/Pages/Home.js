@@ -1,28 +1,33 @@
 import { motion } from 'framer-motion';
+import toast from 'react-hot-toast';
 import { FaDev, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMailOpen } from 'react-icons/hi';
 import Footer from '../Components/Shared/Footer';
-// import { useRef, useState } from 'react';
-// import { BiCloudDownload } from 'react-icons/bi';
-// import { toast } from 'react-toastify';
-// import signatureWhite from '../Assets/Neyaz-signature-white.png'
 
 const Home = () => {
 
-    // const [copySuccess, setCopySuccess] = useState('');
-    // const textAreaRef = useRef(null);
+    const handleEmailCopy = () => {
+        navigator.clipboard.writeText('neyaznafiz@outlook.com')
 
-    // function copyToClipboard(e) {
-    //     textAreaRef.current.select();
-    //     document.execCommand('copy');
-    //     e.target.focus();
-    //     // setCopySuccess('E-mail Copied');
-    //     toast.success('E-mail Copied!')
-    // };
+        toast('Email Copied', {
+            icon: '✔️',
+            duration: 4000,
+            position: 'bottom-right',
+    
+            style: {
+                background: 'transparent',
+                color: '#fff',
+                border: '2px solid white',
+                marginBottom: '300px',
+                marginRight: '55px'
+            },
+        })
+
+    }
 
     return (
         <div className="">
-           
+
             <div className='px-3'>
                 <div className=' md:flex justify-between items-center gap-x-5 pt-10'>
 
@@ -93,7 +98,7 @@ const Home = () => {
                             //    whileHover={{ backgroundColor: ['rgba(33, 33, 33, 0)', '#ffffff'] }}
                             className='border md:w-40 md:h-40'>
 
-                            <motion.button onClick={() => navigator.clipboard.writeText('neyaznafiz@outlook.com')}
+                            <motion.button onClick={handleEmailCopy}
                                 whileHover={{ backgroundColor: ['rgba(33, 33, 33, 0)', '#ffffff'] }}
                                 transition={{ duration: 0.3 }}
                                 className='w-32 h-32 flex justify-center items-center text-5xl text-primary  hover:text-neutral m-4 border border-primary'>
@@ -102,46 +107,10 @@ const Home = () => {
 
                         </motion.div>
 
-
-                        {/* email */}
-                        {/* <div>
-                            {
-                                document.queryCommandSupported('copy') &&
-                                <motion.div
-                                    whileHover={{ backgroundColor: ['#ffffff', 'rgba(33, 33, 33, 0)'] }}
-                                    className='border bg-primary md:w-40 md:h-40'>
-                                    <motion.button onClick={copyToClipboard}
-                                        whileHover={{ backgroundColor: ['#ffffff', 'rgba(33, 33, 33, 0)'] }}
-                                        className='w-32 h-32 flex justify-center items-center text-5xl bg-primary text-neutral hover:text-primary m-4 border border-primary'
-                                    ><HiOutlineMailOpen /></motion.button>
-                                </motion.div>
-
-                            }
-
-                            <htmlForm className=''>
-                                <textarea
-                                    ref={textAreaRef}
-                                    value='neyaznafiz@outlook.com'
-                                />
-                            </htmlForm>
-                        </div> */}
                     </motion.div>
 
                 </div>
 
-
-                {/* <motion.div className='flex justify-end py-3'
-                    initial={{ x: 2000 }}
-                    animate={{ x: 40 }}
-                    transition={{ delay: 1.3, duration: 2, type: 'spring' }}>
-                    <img src={signatureWhite} alt="" className='opacity-80 w-72' />
-                </motion.div> */}
-                {/* <motion.div className='flex justify-end py-3 mr-10'
-                    initial={{ x: 2000 }}
-                    animate={{ x: 40 }}
-                    transition={{ delay: 1.3, duration: 2, type: 'spring' }}>
-                    <button className='btn2-selection type-2'> DOWNLOAD RESUME <BiCloudDownload className='text-xl ml-2' /> </button>
-                </motion.div> */}
             </div>
 
             <motion.div className='md:mt-16'
