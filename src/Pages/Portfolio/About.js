@@ -20,12 +20,40 @@ const About = () => {
             </div>
 
 
-            <div>
-                <div>
-                    <p className='text-2xl font-bold'>SKILLS</p>
-                    
+            
+                <div className='my-10'>
+                    <p className='text-2xl font-bold my-3'>SKILLS</p>
+
+                    <p className='pl-6 flex text-lg'>Comfortable:
+                        <p className='text- pl-20'>
+                            React | JavaScript | ES6 | CSS | Tailwind CSS | Bootstrap <br />
+                            Framer Motion | NodeJS | ExpressJS | MongoDB <br />
+                            Stripe | Firebase | Netlify | Heroku
+                        </p>
+                    </p>
+
+                    <p className='pl-6 flex text-lg py-10'>Familiar:
+                        <p className='text- pl-[143px]'>
+                            React Native | NextJS | TypeScript <br />
+                            Mongoose | Socket.io
+
+                        </p>
+                    </p>
+
+
+                    <p className='pl-6 flex text-lg'>Tools:
+                        <p className='text- pl-[163px]'>
+                            Git | VS Code | Figma <br />
+                            Chrome DevTools | React Developer Tools
+
+
+                        </p>
+                    </p>
+
                 </div>
-            </div>
+            
+
+           
 
         </div>
     );

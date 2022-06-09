@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
+import Footer from '../../Components/Shared/Footer';
 
 const Portfolio = () => {
     return (
@@ -13,7 +14,14 @@ const Portfolio = () => {
             </div>
 
             <Outlet />
-            
+
+            <motion.div className='md:mt-20 md:px-32'
+                initial={{ y: 300 }}
+                animate={{ y: 20 }}
+                transition={{ delay: 0.2, type: 'spring' }}
+            >
+                <Footer />
+            </motion.div>
         </div>
     );
 };

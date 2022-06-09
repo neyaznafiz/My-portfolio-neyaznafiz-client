@@ -67,7 +67,7 @@ const Contact = () => {
                             initial={{ x: -2000 }}
                             animate={{ x: -0 }}
                             transition={{ duration: 1.5, type: 'spring' }}
-                            className="htmlForm-control w-full bg-transparent border-0">
+                            className="form-control w-full bg-transparent border-0">
 
                             <input
                                 type="text"
@@ -83,7 +83,7 @@ const Contact = () => {
                             initial={{ x: 2000 }}
                             animate={{ x: 0 }}
                             transition={{ duration: 1.5, type: 'spring' }}
-                            className="htmlForm-control w-full bg-transparent border-0 mt-6 md:mt-0 lg:mt-0">
+                            className="form-control w-full bg-transparent border-0 mt-6 md:mt-0 lg:mt-0">
 
                             <input
                                 type="email"
@@ -101,7 +101,7 @@ const Contact = () => {
                         initial={{ y: 900 }}
                         animate={{ y: 0 }}
                         transition={{ type: 'spring' }}
-                        className="htmlForm-control w-full bg-transparent border-0 my-6">
+                        className="form-control w-full bg-transparent border-0 my-6">
 
                         <input
                             type="text"
