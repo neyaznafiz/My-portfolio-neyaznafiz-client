@@ -12,7 +12,7 @@ const SingleProjectInfo = () => {
     const {name, }= projectDetails
 
     useEffect(() => {
-        axios.get(`http://localhost:4000/project/${Id}`)
+        axios.get(`https://obscure-ridge-82105.herokuapp.com/project/${Id}`)
             .then(res => {
                 const { data } = res
                 setProjectDetails(data);

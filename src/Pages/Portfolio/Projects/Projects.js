@@ -9,7 +9,7 @@ const Projects = () => {
 
 
     useEffect(() => {
-        axios.get('http://localhost:4000/project')
+        axios.get('https://obscure-ridge-82105.herokuapp.com/project')
             .then(res => {
                 const { data } = res
                 setMyProjects(data);
