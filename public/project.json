@@ -1,0 +1,89 @@
+[
+    {
+        "name": "Fashion Flavour",
+        "img1": "https://i.ibb.co/gzhf6rr/projectone.png",
+        "img2": "",
+        "img3": "",
+        "info": "Fashion Flavour is a wahrehouse of Suit and littlebit of other Cloths and Shoes. You will get here lots of design suits and you will get also coustomaized suits. For seller, it's a best place to sell your fashion dresses. You can managne your products very easily. Here, you can add your product for sell and you can manage you product quantity easilt, when you will sell a product your quantity will be decrease automatically and also you cal restock you product quantity. And based on your sell we will mark the top 3 seller every year.",
+        "features": {
+            "": "In HOME page you will see a banner, Inventory Items, best seller.",
+            "": "In MANAGE INVENTORY page you will see all products.",
+            "": "After LOGIN or SIGNUP tow more routes enable for you, that's called ADD PRODUCTS and MY PRODUCTS.",
+            "": "In MY PRODUCTS page you will see only those products that you will add.",
+            "": "In BLOG page you will find some question & answer about technologies.",
+            "": "You can only DELETE your own product in MY PRODUCTS."
+        },
+        "technologies": "To create and handle this website there are somany awosome technologies used like React, CSS, Tailwind, Tailwind Elements, MDB, React Router, React Toastify, React Icon, firebase, firebase hooks, Node.js, MongoDB, Heroku, Axios, etc."
+    },
+    {
+        "name": "Parts & Co.",
+        "img1": "https://i.ibb.co/6rpvStY/projectthree.png",
+        "img2": "",
+        "img3": "",
+        "info": "This website about phone parts. You will get your needed phone parts easily here, and you can sell your product here easily as an admin. This website is very easy to use. ANd as coustomer you can order any parts easyly as much as you want. for pement we recive any type of mastercart.",
+        "features": {
+            "1": "In HOME page you will see 6 section, Banner , Some products , Business summary , Review section , About us , and the buttom Footer.",
+            "2": "In ALL PRODUCTpage you will get all products of this website.",
+            "3": "For order you will seletect a product for PURCHASE page, here you have fill a form for your order.",
+            "4": "As an user you find in DASHBOARD so many options, Your profile , Your review , Your orders , Add review. As an admin in DASHBOARD you will see other options like All users , Manage orders , Add product , Manage products.",
+            "5": "In BLOG page you will find some question and answer about programing technology.",
+            "6": "In ABOUT page will see some information about this website.",
+            "7": "In MY PORTFOLIO page you will see some information abou the website developer.",
+            "8": "On the right side of the NAVBAR you will see a alphabet of the signed in user name , after click on the alphabet you will see some information about the signed in user and here you you will see LOG OUT button."
+        },
+        "technologies": "This is a react application, I use for fontend REACT , REACT ROUTER , REACT COUNTUP , REACT ICON , REACT QUERY , REACT TOASTIFY , AXIOS , TAILWIND , TAILWIND ELEMENT , MDB , DAISYUI , and for backend MONGODB , EXPRESS , CORS , DOTENV , JSONWEBTOKEN , NODEMON , for server deploy I use HEROKU, and for user authentication and deploy live site I use FIREBASE ."
+    },
+    {
+        "name": "The developer",
+        "img1": "https://i.ibb.co/yWy0Lft/projecttwo.png",
+        "img2": "",
+        "img3": "",
+        "info": "This is a web development service website. In the service section, you found some services provide by the programer. You can book any services for you from here. You can find some information in the About section about the programmer who belongs to the authority of this website.",
+        "features": {
+            "1": "Here is 5 component Home, Service, Checkout Blog, About.",
+            "2": "In the navbar, the website logo is used for Home Route.",
+            "3": "In blog page here some information about Authenticatin and Firebase.",
+            "4": "In about page there is some information about this developer.",
+            "5": "You can get web services from here. If you need anythying you can contact the developer.",
+            "6": "Here is no hamburger menu, that's why the navbar is little bit wired. It will be fixed soon."
+        },
+        "technologies": "React, Tailwind, Vanilla CSS, React Router, React Toastify, for authentacion and deploy I used here Firebase and firebase hooks. The back-end is not ready yet, we will fixed it soon. "
+    },
+    {
+        "name": "Your Home",
+        "img1": "https://i.ibb.co/D1sCZss/projectfive.png",
+        "img2": "",
+        "img3": "",
+        "info": "This website provide the service of Hottle Room booking. You will find the best room for you. Feel like your home.",
+        "features": {
+            "1": "In HOME page you you will see a opeaning banner.",
+            "2": "In ROOM page you will found lost of hottle room information and you can choose what you want and you will a button named 'Add to Checkout' for booking processing.",
+            "3": "The Checkout route is protected, you have to login fast for continue the booking processing.",
+            "4": "The Checkout page is not ready yet, back-end is under working, we will fixed it soon."
+        },
+        "technologies": "Used here for front-end React, React Router, React Icon, Tailwind. For authentication used here React Firebase Hooks. For back-end used here MongoDB, NodeJS, ExpressJS. As a server used here Heroku and for deploy used here Firebase."
+    },
+    {
+        "name": "Daily-Quotes",
+        "img1": "https://i.ibb.co/QfTsNLB/projectsix.png",
+        "img2": "",
+        "img3": "",
+        "info": "This is a website about insprational quotes. Here you will get lots of quotes for your inspration.",
+        "features": {
+            "1": "This is a single page web application with a asethetic background. Here you will found a button for get you quotes, you have to click the button every time to get quotes one by one."
+        },
+        "technologies": "This is a row JavaScript web apllication, used here JavaScript, HTMl and CSS, and to get quotes used here the API from kanye.rest ."
+    },
+    {
+        "name": "Weatrer",
+        "img1": "https://i.ibb.co/vv3hWrd/projectfour.png",
+        "img2": "",
+        "img3": "",
+        "info": "It's a weather checker web application. You can use it to get daily weather update. It's very easy to use.",
+        "features": {
+            "1": "It's a single page web application. You can check daily weather information just search by the place name.",
+            "2":"You will found a search bar on the top of the page, just put the place name here and click the 'search' button to get the weather update of the place."
+        },
+        "technologies": "It's a row JavaScript web application. Used here JavaScript, HTML and CSS, and to get weather information used here the API from openweathermap.org ."
+    }
+]

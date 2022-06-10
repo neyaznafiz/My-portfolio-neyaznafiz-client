@@ -13,7 +13,8 @@ import { PuffLoader } from "react-spinners";
 import useLoading from "./Hooks/useLoading";
 import Background from './Assets/tech-background.png'
 import Particle from "./Style/Particle";
-import Projects from "./Pages/Portfolio/Projects";
+import Projects from "./Pages/Portfolio/Projects/Projects";
+import SingleProjectInfo from "./Pages/Portfolio/Projects/SingleProjectInfo";
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
 
                 <Route path='about' element={<About></About>} />
                 <Route path='projects' element={<Projects></Projects>} />
+                <Route path='projects/:Id' element={<SingleProjectInfo></SingleProjectInfo>} />
 
                 </Route>
 
