@@ -5,7 +5,7 @@ import DisplayAllProjects from './DisplayAllProjects';
 const Projects = () => {
 
     const [myProjects, setMyProjects] = useState([])
-    console.log(myProjects)
+    // console.log(myProjects)
 
 
     useEffect(() => {

@@ -24,18 +24,16 @@ const DisplayAllProjects = ({ project }) => {
 
                         <div className='flex ml-20 items-center h-full pr-6'>
 
-                            <div>
-                                <button onClick={() => navigateToDetails(_id)} className="text-lg" > More Details </button>
-                            </div>
-
-                            <div>
+                            
+                                <button onClick={() => navigateToDetails(_id)} className="text-lg hover:text-gray-400" > MORE DETAILS </button>
+                            
                                 <Typed
                                     strings={["❯ ❯ ❯"]}
                                     typeSpeed={200}
                                     backSpeed={10}
                                     loop
                                     className='text-lg pl-2' />
-                            </div>
+                            
                         </div>
                     </div>
 
