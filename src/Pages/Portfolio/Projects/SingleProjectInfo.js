@@ -10,6 +10,8 @@ const SingleProjectInfo = () => {
     // console.log(projectDetails);
 
     const { name, img1, img2, img3, img4, info, features, technologies } = projectDetails
+    const projectName = "Fashion Flavour"
+
 
     useEffect(() => {
         axios.get(`https://obscure-ridge-82105.herokuapp.com/project/${Id}`)
@@ -23,55 +25,82 @@ const SingleProjectInfo = () => {
     return (
         <div className='bg-[#014b4d] bg-opacity-80 py-16 px-4 md:px-40'>
 
+            <div>
+                <p className='text-5xl font-semibold tracking-wider'>{name}</p>
+            </div>
 
+            <div>
 
+                <div class="flex justify-around gap-x-10 mt-10">
 
+                    <div className=''>
 
-
-
-            {/* <div class="w-1/2 p-1 md:p-2">
-                                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                                    src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp" />
+                        {img2 ?
+                            <div className=''>
+                                <img alt="gallery" class=" w-[233] h-80  md:w-[440px] md:h-[872px] rounded-lg mb-10"
+                                    src={img2} />
                             </div>
+                            :
+                            <div>
+                                <img alt="gallery" class=" w-[233] h-80  rounded-lg"
+                                    src={img1} />
+                            </div>
+                        }
 
-                            <div class="w-1/2 p-1 md:p-2">
-                                <img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg"
-                                    src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp" />
-                            </div> */}
-
-            <div class="w-3/7 p-1 md:p-2">
-
-                {img2 &&
-                    <div>
-                        <img alt="gallery" class=" w-[233] h-80  md:w-[465] md:h-[872px] rounded-lg"
-                            src={img2} />
                     </div>
-                }
 
-                {img3 &&
-                    <div>
-                        <img alt="gallery" class="w-[233] h-80  md:w-[465] md:h-[872px] rounded-lg"
-                            src={img3} />
+                    <div className='w-[800px]'>
+                        {projectName == name ?
+                            <div>
+                                <img alt="gallery" class=" md:h-[872px] rounded-lg"
+                                    src={img3} />
+                            </div>
+                            :
+                            <div>
+                                <p>{info}</p>
+                                <p>{technologies}</p>
+                            </div>
+                        }
                     </div>
-                }
+                </div>
+
+            </div>
+
+            <div className='flex justify-between'>
+
+                <div className={`${!img4 && 'w-full'}`}>
+                    {projectName !== name ?
+                        <div className='flex justify-end'>
+                            {img3 &&
+                                <div className=''>
+                                    <img alt="gallery" className=" h-80 rounded-lg"
+                                        src={img3} />
+                                </div>
+                            }
+                        </div>
+                        :
+                        <div>
+                            <p>{info}</p>
+                            <p>{technologies}</p>
+                        </div>
+                    }
+                </div>
+
 
                 {img4 &&
                     <div>
-                        <img alt="gallery" class=" w-[233] h-80  md:w-[465] md:h-[872px] rounded-lg"
+                        <img alt="gallery" class=" h-80 rounded-lg"
                             src={img4} />
                     </div>
                 }
 
-                {img1 &&
+                {/* {img1 &&
                     <div>
-                        <img alt="gallery" class=" w-[233] h-80  md:w-[465] md:h-[872px] rounded-lg"
+                        <img alt="gallery" class=" h-80 rounded-lg"
                             src={img1} />
                     </div>
-                }
+                } */}
             </div>
-
-            <p>{name}</p>
-            <p>{features?.one}</p>
         </div>
     );
 };
