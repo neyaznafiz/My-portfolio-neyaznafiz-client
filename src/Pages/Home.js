@@ -16,13 +16,13 @@ const Home = () => {
             icon: '✔️',
             duration: 4000,
             position: 'bottom-right',
-    
+
             style: {
                 background: 'transparent',
                 color: '#fff',
                 border: '2px solid white',
                 marginBottom: '290px',
-                marginRight: '55px',               
+                marginRight: '55px',
             },
         })
 
@@ -50,16 +50,28 @@ const Home = () => {
                                 className='text-4xl flex items-center'> | Web Developer |  </motion.p>
                         </div>
                     </div>
-                    
+
                     <motion.div
                         className='grid grid-cols-2 gap-5 pb-16 pt-10'
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
-                        transition={{ delay: 0.5, duration: 2 }}
+                        transition={{ delay: 0.5, duration: 1 }}
                     >
 
                         {/* github */}
                         <motion.div
+                            animate={{
+                                // scale: [1, 2, 2, 1, 1],
+                                rotate: [270, 270, 0, 0, 0],
+                                // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+                            }}
+                            transition={{
+                                duration: 2,
+                                ease: "easeInOut",
+                                times: [0, 0.2, 0.5, 0.8, 1],
+                                // repeat: Infinity,
+                                repeatDelay: 1
+                              }}
                             // whileHover={{ backgroundColor: ['rgba(33, 33, 33, 0)', '#ffffff'] }}
                             className='border md:w-40 md:h-40 text-primary  hover:text-neutral'>
 
@@ -73,6 +85,18 @@ const Home = () => {
 
                         {/* devto */}
                         <motion.div
+                         animate={{
+                            // scale: [1, 2, 2, 1, 1],
+                            rotate: [270, 270, 0, 0, 0],
+                            // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+                        }}
+                        transition={{
+                            duration: 2,
+                            ease: "easeInOut",
+                            times: [0, 0.2, 0.5, 0.8, 1],
+                            // repeat: Infinity,
+                            repeatDelay: 1
+                          }}
                             // whileHover={{ backgroundColor: ['rgba(33, 33, 33, 0)', '#ffffff'] }}
                             className='border md:w-40 md:h-40 text-primary  hover:text-neutral'>
 
@@ -82,10 +106,22 @@ const Home = () => {
                                 className='w-32 h-32 flex justify-center items-center text-5xl text-primary  hover:text-neutral m-4 border border-primary'><FaDev /></motion.a>
 
                         </motion.div>
-                        
+
 
                         {/* linkdin */}
                         <motion.div
+                         animate={{
+                            // scale: [1, 2, 2, 1, 1],
+                            rotate: [270, 270, 0, 0, 0],
+                            // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+                        }}
+                        transition={{
+                            duration: 2,
+                            ease: "easeInOut",
+                            times: [0, 0.2, 0.5, 0.8, 1],
+                            // repeat: Infinity,
+                            repeatDelay: 1
+                          }}
                             // whileHover={{ backgroundColor: ['rgba(33, 33, 33, 0)', '#ffffff'] }}
                             className='border md:w-40 md:h-40 text-primary  hover:text-neutral'>
 
@@ -98,6 +134,18 @@ const Home = () => {
 
                         {/* email */}
                         <motion.div
+                         animate={{
+                            // scale: [1, 2, 2, 1, 1],
+                            rotate: [270, 270, 0, 0, 0],
+                            // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+                        }}
+                        transition={{
+                            duration: 2,
+                            ease: "easeInOut",
+                            times: [0, 0.2, 0.5, 0.8, 1],
+                            // repeat: Infinity,
+                            repeatDelay: 1
+                          }}
                             //    whileHover={{ backgroundColor: ['rgba(33, 33, 33, 0)', '#ffffff'] }}
                             className='border md:w-40 md:h-40'>
 
@@ -112,7 +160,7 @@ const Home = () => {
 
                     </motion.div>
                 </div>
-                    <Particle></Particle>
+                <Particle></Particle>
             </div>
 
             <motion.div className='md:mt-20'
