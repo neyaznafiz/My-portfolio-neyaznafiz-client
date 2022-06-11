@@ -10,7 +10,9 @@ const SingleProjectInfo = () => {
     // console.log(projectDetails);
 
     const { name, img1, img2, img3, img4, info, features, technologies } = projectDetails
-    const projectName = "Fashion Flavour"
+
+    const ff = "Fashion Flavour"
+    const td = "The developer"
 
 
     useEffect(() => {
@@ -23,7 +25,7 @@ const SingleProjectInfo = () => {
     }, [Id])
 
     return (
-        <div className='bg-[#014b4d] bg-opacity-80 py-16 px-4 md:px-40'>
+        <div className='bg-[#014b4d] bg-opacity-90 my-5 py-20 px-4 md:px-40'>
 
             <div>
                 <p className='text-5xl font-semibold tracking-wider'>{name}</p>
@@ -31,13 +33,13 @@ const SingleProjectInfo = () => {
 
             <div>
 
-                <div class="flex justify-around gap-x-10 mt-10">
+                <div class={`flex ${ff == name && "justify-center"} ${ff !== name && "justify-around"} gap-x-10 mt-10`}>
 
                     <div className=''>
 
                         {img2 ?
                             <div className=''>
-                                <img alt="gallery" class=" w-[233] h-80  md:w-[440px] md:h-[872px] rounded-lg mb-10"
+                                <img alt="gallery" className={`w-[233] h-80 md:h-[872px] ${td !== name && "md:w-[440px]"} ${td == name && "md:w-[540px]"} ${ff == name && "md:w-full"} rounded-lg mb-10`}
                                     src={img2} />
                             </div>
                             :
@@ -49,16 +51,37 @@ const SingleProjectInfo = () => {
 
                     </div>
 
-                    <div className='w-[800px]'>
-                        {projectName == name ?
+                    <div className='w-1/2 flex justify-end'>
+                        {ff == name ?
                             <div>
                                 <img alt="gallery" class=" md:h-[872px] rounded-lg"
                                     src={img3} />
                             </div>
                             :
-                            <div>
-                                <p>{info}</p>
-                                <p>{technologies}</p>
+                            <div className=''>
+                                <div className='text-center mb-8 text-xl'>
+                                    <p>{info}</p>
+                                </div>
+
+                                <div>
+                                    <p className='text-xl font-semibold tracking-wide'>Features :</p>
+
+                                    <div className='ml-10 grid gap-y-'>
+                                        <p>{features?.one}</p>
+                                        <p>{features?.two}</p>
+                                        <p>{features?.three}</p>
+                                        <p>{features?.fous}</p>
+                                        <p>{features?.five}</p>
+                                        <p>{features?.six}</p>
+                                        <p>{features?.seven}</p>
+                                        <p>{features?.eight}</p>
+                                    </div>
+                                </div>
+
+                                <div className='mt-5'>
+                                    <p className='text-xl font-semibold tracking-wide'>Technologies Used : </p>
+                                    <p className='ml-10 text-'>{technologies}</p>
+                                </div>
                             </div>
                         }
                     </div>
@@ -69,7 +92,7 @@ const SingleProjectInfo = () => {
             <div className='flex justify-between'>
 
                 <div className={`${!img4 && 'w-full'}`}>
-                    {projectName !== name ?
+                    {ff !== name ?
                         <div className='flex justify-end'>
                             {img3 &&
                                 <div className=''>
@@ -79,9 +102,30 @@ const SingleProjectInfo = () => {
                             }
                         </div>
                         :
-                        <div>
-                            <p>{info}</p>
-                            <p>{technologies}</p>
+                        <div className='p-10'>
+                            <div className='text-center mb-8 text-xl'>
+                                <p>{info}</p>
+                            </div>
+
+                            <div>
+                                <p className='text-xl font-semibold tracking-wide'>Features :</p>
+
+                                <div className='ml-10 grid gap-y-'>
+                                    <p>{features?.one}</p>
+                                    <p>{features?.two}</p>
+                                    <p>{features?.three}</p>
+                                    <p>{features?.fous}</p>
+                                    <p>{features?.five}</p>
+                                    <p>{features?.six}</p>
+                                    <p>{features?.seven}</p>
+                                    <p>{features?.eight}</p>
+                                </div>
+                            </div>
+
+                            <div className='mt-5'>
+                                <p className='text-xl font-semibold tracking-wide'>Technologies Used : </p>
+                                <p className='ml-10 text-'>{technologies}</p>
+                            </div>
                         </div>
                     }
                 </div>
