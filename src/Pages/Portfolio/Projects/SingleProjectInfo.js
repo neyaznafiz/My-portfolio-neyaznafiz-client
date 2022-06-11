@@ -9,7 +9,7 @@ const SingleProjectInfo = () => {
     const [projectDetails, setProjectDetails] = useState({})
     // console.log(projectDetails);
 
-    const { name, img1, img2, img3, img4, info, features, technologies } = projectDetails
+    const { name, img1, img2, img3, img4, info, features, technologies, codelink, livelink } = projectDetails
 
     const ff = "Fashion Flavour"
     const td = "The developer"
@@ -82,6 +82,11 @@ const SingleProjectInfo = () => {
                                     <p className='text-xl font-semibold tracking-wide'>Technologies Used : </p>
                                     <p className='ml-10 text-'>{technologies}</p>
                                 </div>
+
+                                <div className='grid md:flex justify-center md:gap-x-12 py-4 md:py-14 text-xl '>
+                                    <a href={livelink} target='_blank' className='btn2-selection type-2'>Live Link</a>
+                                    <a href={codelink} target='_blank' className='btn2-selection type-2'>Code Link</a>
+                                </div>
                             </div>
                         }
                     </div>
@@ -103,6 +108,11 @@ const SingleProjectInfo = () => {
                         </div>
                         :
                         <div className='p-10'>
+
+                            <div className='grid md:flex justify-center md:gap-x-12 py-4 md:py-14 text-xl '>
+                                <a href={livelink} target='_blank' className='btn2-selection type-2'>Live Link</a>
+                                <a href={codelink} target='_blank' className='btn2-selection type-2'>Code Link</a>
+                            </div>
                             <div className='text-center mb-8 text-xl'>
                                 <p>{info}</p>
                             </div>

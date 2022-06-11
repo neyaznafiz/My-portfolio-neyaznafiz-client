@@ -5,7 +5,7 @@ import signatureWhite from '../../Assets/Neyaz-signature-white.png'
 
 const About = () => {
     return (
-        <div className='bg-[#014b4d] bg-opacity-80 py-16 px-4 md:px-40'>
+        <div className='bg-[#014b4d] bg-opacity-80 my-5 py-16 px-4 md:px-40'>
 
             <motion.div
                 whileHover={{ backgroundColor: ['rgba(33, 33, 33, 0)', 'rgba(255, 255, 255, 0.6)'], color: ['#ffffff', '#000000'] }}
