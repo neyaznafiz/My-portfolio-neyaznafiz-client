@@ -60,18 +60,18 @@ const Home = () => {
 
                         {/* github */}
                         <motion.div
-                            animate={{
-                                scale: [1, 2, 2, 1, 1],
-                                rotate: [270, 270, 0, 0, 0],
-                                // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
-                            }}
-                            transition={{
-                                duration: 2,
-                                ease: "easeInOut",
-                                times: [0, 0.2, 0.5, 0.8, 1],
-                                // repeat: Infinity,
-                                repeatDelay: 1
-                              }}
+                            // animate={{
+                            //     scale: [1, 2, 2, 1, 1],
+                            //     rotate: [270, 270, 0, 0, 0],
+                            //     // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+                            // }}
+                            // transition={{
+                            //     duration: 2,
+                            //     ease: "easeInOut",
+                            //     times: [0, 0.2, 0.5, 0.8, 1],
+                            //     // repeat: Infinity,
+                            //     repeatDelay: 1
+                            //   }}
                             // whileHover={{ backgroundColor: ['rgba(33, 33, 33, 0)', '#ffffff'] }}
                             className='border md:w-40 md:h-40 text-primary  hover:text-neutral'>
 
@@ -85,18 +85,18 @@ const Home = () => {
 
                         {/* devto */}
                         <motion.div
-                         animate={{
-                            scale: [1, 2, 2, 1, 1],
-                            rotate: [270, 270, 0, 0, 0],
-                            // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
-                        }}
-                        transition={{
-                            duration: 2,
-                            ease: "easeInOut",
-                            times: [0, 0.2, 0.5, 0.8, 1],
-                            // repeat: Infinity,
-                            repeatDelay: 1
-                          }}
+                        //  animate={{
+                        //     scale: [1, 2, 2, 1, 1],
+                        //     rotate: [270, 270, 0, 0, 0],
+                        //     // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+                        // }}
+                        // transition={{
+                        //     duration: 2,
+                        //     ease: "easeInOut",
+                        //     times: [0, 0.2, 0.5, 0.8, 1],
+                        //     // repeat: Infinity,
+                        //     repeatDelay: 1
+                        //   }}
                             // whileHover={{ backgroundColor: ['rgba(33, 33, 33, 0)', '#ffffff'] }}
                             className='border md:w-40 md:h-40 text-primary  hover:text-neutral'>
 
@@ -110,18 +110,18 @@ const Home = () => {
 
                         {/* linkdin */}
                         <motion.div
-                         animate={{
-                            scale: [1, 2, 2, 1, 1],
-                            rotate: [270, 270, 0, 0, 0],
-                            // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
-                        }}
-                        transition={{
-                            duration: 2,
-                            ease: "easeInOut",
-                            times: [0, 0.2, 0.5, 0.8, 1],
-                            // repeat: Infinity,
-                            repeatDelay: 1
-                          }}
+                        //  animate={{
+                        //     scale: [1, 2, 2, 1, 1],
+                        //     rotate: [270, 270, 0, 0, 0],
+                        //     // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+                        // }}
+                        // transition={{
+                        //     duration: 2,
+                        //     ease: "easeInOut",
+                        //     times: [0, 0.2, 0.5, 0.8, 1],
+                        //     // repeat: Infinity,
+                        //     repeatDelay: 1
+                        //   }}
                             // whileHover={{ backgroundColor: ['rgba(33, 33, 33, 0)', '#ffffff'] }}
                             className='border md:w-40 md:h-40 text-primary  hover:text-neutral'>
 
@@ -134,18 +134,18 @@ const Home = () => {
 
                         {/* email */}
                         <motion.div
-                         animate={{
-                            scale: [1, 2, 2, 1, 1],
-                            rotate: [270, 270, 0, 0, 0],
-                            // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
-                        }}
-                        transition={{
-                            duration: 2,
-                            ease: "easeInOut",
-                            times: [0, 0.2, 0.5, 0.8, 1],
-                            // repeat: Infinity,
-                            repeatDelay: 1
-                          }}
+                        //  animate={{
+                        //     scale: [1, 2, 2, 1, 1],
+                        //     rotate: [270, 270, 0, 0, 0],
+                        //     // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+                        // }}
+                        // transition={{
+                        //     duration: 2,
+                        //     ease: "easeInOut",
+                        //     times: [0, 0.2, 0.5, 0.8, 1],
+                        //     // repeat: Infinity,
+                        //     repeatDelay: 1
+                        //   }}
                             //    whileHover={{ backgroundColor: ['rgba(33, 33, 33, 0)', '#ffffff'] }}
                             className='border md:w-40 md:h-40'>
 
