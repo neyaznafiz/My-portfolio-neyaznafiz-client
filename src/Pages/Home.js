@@ -61,7 +61,7 @@ const Home = () => {
                         {/* github */}
                         <motion.div
                             animate={{
-                                // scale: [1, 2, 2, 1, 1],
+                                scale: [1, 2, 2, 1, 1],
                                 rotate: [270, 270, 0, 0, 0],
                                 // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
                             }}
@@ -86,7 +86,7 @@ const Home = () => {
                         {/* devto */}
                         <motion.div
                          animate={{
-                            // scale: [1, 2, 2, 1, 1],
+                            scale: [1, 2, 2, 1, 1],
                             rotate: [270, 270, 0, 0, 0],
                             // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
                         }}
@@ -111,7 +111,7 @@ const Home = () => {
                         {/* linkdin */}
                         <motion.div
                          animate={{
-                            // scale: [1, 2, 2, 1, 1],
+                            scale: [1, 2, 2, 1, 1],
                             rotate: [270, 270, 0, 0, 0],
                             // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
                         }}
@@ -135,7 +135,7 @@ const Home = () => {
                         {/* email */}
                         <motion.div
                          animate={{
-                            // scale: [1, 2, 2, 1, 1],
+                            scale: [1, 2, 2, 1, 1],
                             rotate: [270, 270, 0, 0, 0],
                             // borderRadius: ["20%", "20%", "50%", "50%", "20%"],
                         }}

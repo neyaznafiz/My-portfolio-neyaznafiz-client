@@ -5,7 +5,8 @@ import signatureWhite from '../../Assets/Neyaz-signature-white.png'
 
 const About = () => {
     return (
-        <div className='bg-[#014b4d] bg-opacity-80 my-5 py-16 px-4 md:px-40'>
+        <motion.div
+            className='bg-[#014b4d] bg-opacity-80 my-5 py-16 px-4 md:px-40'>
 
             <motion.div
                 whileHover={{ backgroundColor: ['rgba(33, 33, 33, 0)', 'rgba(255, 255, 255, 0.6)'], color: ['#ffffff', '#000000'] }}
@@ -109,14 +110,14 @@ const About = () => {
                 </div>
 
                 <motion.div className='flex justify-end'
-                        initial={{ x: -2000 }}
-                        animate={{ x: -20 }}
-                        transition={{ delay: 2.4, duration: 2, type: 'spring' }}>
-                        <img src={signatureWhite} alt="" className='opacity-90 w-48' />
-                    </motion.div>
+                    initial={{ x: -2000 }}
+                    animate={{ x: -20 }}
+                    transition={{ delay: 2.4, duration: 2, type: 'spring' }}>
+                    <img src={signatureWhite} alt="" className='opacity-90 w-48' />
+                </motion.div>
             </motion.div>
 
-        </div>
+        </motion.div>
     );
 };
 
