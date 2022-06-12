@@ -34,8 +34,8 @@ const About = () => {
                 </motion.div>
 
                 <motion.div
-                    initial={{ y: -450, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
+                    initial={{  opacity: 0 }}
+                    animate={{  opacity: 1 }}
                     transition={{ duration: 1, type: 'tween' }}
                     className='flex justify-center py-10 md:py-20'>
                     <p className='w-[1080px] text-center text-xl'>I am a Web Developer With a good understanding of building modern dynamic websites and a love for React. I am a student of Computer Science and Technology. My future vision is I want to see myself in the future as a great programmer. My interest is in machine learning and ethical hacking. I hope, my hard work takes me to my goal. Ready to give my best to any aspiring.
